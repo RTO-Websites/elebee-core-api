@@ -17,7 +17,8 @@ $iterator = Finder::create()
 ;
 
 $versions = GitVersionCollection::create($srcDir)
-    ->add('master', '0.1.0')
+    ->add('master', '0.2.0')
+    ->addFromTags('0.1.0')
 ;
 
 return new Sami($iterator, [

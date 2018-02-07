@@ -23,6 +23,12 @@
             <div id="content">
         <div id="left-column">
                 <div id="control-panel">
+                    <form action="#" method="GET">
+                <select id="version-switcher" name="version">
+                                            <option value="../../../master/index.html" data-version="master">0.2.0</option>
+                                            <option value="../../../0.1.0/index.html" data-version="0.1.0">0.1.0</option>
+                                    </select>
+            </form>
                 <script>
             $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
         </script>
@@ -85,6 +91,8 @@
         
     
 
+            <div class="description">
+            <p>Class SkinArchive</p>                                </div>
     
     
     
@@ -94,7 +102,7 @@
             <div class="container-fluid underlined">
                     <div class="row">
                 <div class="col-md-2 type">
-                    
+                    string
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_get_id">get_id</a>()
@@ -105,7 +113,7 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    
+                    string
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_get_title">get_title</a>()
@@ -116,7 +124,7 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    
+                    void
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method__register_controls_actions">_register_controls_actions</a>()
@@ -127,7 +135,7 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    
+                    void
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_registerArchiveSection">registerArchiveSection</a>(<abbr title="Elementor\Widget_Base">Widget_Base</abbr> $widget)
@@ -138,7 +146,7 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    
+                    void
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_registerArchiveStyleSection">registerArchiveStyleSection</a>()
@@ -149,7 +157,7 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    
+                    void
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_render_post">render_post</a>()
@@ -160,7 +168,7 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    
+                    void
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_render_loop_header">render_loop_header</a>()
@@ -171,7 +179,7 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    
+                    void
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_render_loop_footer">render_loop_footer</a>()
@@ -188,8 +196,8 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method_get_id">
-        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Skins/SkinArchive.php#L12">line 12</a></div>
-        <code>                    
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Skins/SkinArchive.php#L40">line 40</a></div>
+        <code>                    string
     <strong>get_id</strong>()
         </code>
     </h3>
@@ -199,6 +207,15 @@
 
                 <div class="tags">
             
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
             
             
                     </div>
@@ -207,8 +224,8 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_get_title">
-        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Skins/SkinArchive.php#L16">line 16</a></div>
-        <code>                    
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Skins/SkinArchive.php#L51">line 51</a></div>
+        <code>                    string
     <strong>get_title</strong>()
         </code>
     </h3>
@@ -218,6 +235,15 @@
 
                 <div class="tags">
             
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
             
             
                     </div>
@@ -226,8 +252,8 @@
             </div>
                     <div class="method-item">
                     <h3 id="method__register_controls_actions">
-        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Skins/SkinArchive.php#L20">line 20</a></div>
-        <code>            protected        
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Skins/SkinArchive.php#L62">line 62</a></div>
+        <code>            protected        void
     <strong>_register_controls_actions</strong>()
         </code>
     </h3>
@@ -237,6 +263,15 @@
 
                 <div class="tags">
             
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
             
             
                     </div>
@@ -245,8 +280,8 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_registerArchiveSection">
-        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Skins/SkinArchive.php#L27">line 27</a></div>
-        <code>                    
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Skins/SkinArchive.php#L77">line 77</a></div>
+        <code>                    void
     <strong>registerArchiveSection</strong>(<abbr title="Elementor\Widget_Base">Widget_Base</abbr> $widget)
         </code>
     </h3>
@@ -266,6 +301,15 @@
             </table>
 
             
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
             
             
                     </div>
@@ -274,8 +318,8 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_registerArchiveStyleSection">
-        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Skins/SkinArchive.php#L74">line 74</a></div>
-        <code>                    
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Skins/SkinArchive.php#L131">line 131</a></div>
+        <code>                    void
     <strong>registerArchiveStyleSection</strong>()
         </code>
     </h3>
@@ -285,6 +329,15 @@
 
                 <div class="tags">
             
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
             
             
                     </div>
@@ -293,8 +346,8 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_render_post">
-        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Skins/SkinArchive.php#L106">line 106</a></div>
-        <code>            protected        
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Skins/SkinArchive.php#L170">line 170</a></div>
+        <code>            protected        void
     <strong>render_post</strong>()
         </code>
     </h3>
@@ -304,6 +357,15 @@
 
                 <div class="tags">
             
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
             
             
                     </div>
@@ -312,8 +374,8 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_render_loop_header">
-        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Skins/SkinArchive.php#L118">line 118</a></div>
-        <code>            protected        
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Skins/SkinArchive.php#L189">line 189</a></div>
+        <code>            protected        void
     <strong>render_loop_header</strong>()
         </code>
     </h3>
@@ -323,6 +385,15 @@
 
                 <div class="tags">
             
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
             
             
                     </div>
@@ -331,8 +402,8 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_render_loop_footer">
-        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Skins/SkinArchive.php#L124">line 124</a></div>
-        <code>            protected        
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Skins/SkinArchive.php#L201">line 201</a></div>
+        <code>            protected        void
     <strong>render_loop_footer</strong>()
         </code>
     </h3>
@@ -342,6 +413,15 @@
 
                 <div class="tags">
             
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
             
             
                     </div>

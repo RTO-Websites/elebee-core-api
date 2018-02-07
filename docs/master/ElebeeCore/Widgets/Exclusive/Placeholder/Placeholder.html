@@ -23,6 +23,12 @@
             <div id="content">
         <div id="left-column">
                 <div id="control-panel">
+                    <form action="#" method="GET">
+                <select id="version-switcher" name="version">
+                                            <option value="../../../../../master/index.html" data-version="master">0.2.0</option>
+                                            <option value="../../../../../0.1.0/index.html" data-version="0.1.0">0.1.0</option>
+                                    </select>
+            </form>
                 <script>
             $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
         </script>
@@ -85,6 +91,8 @@
         
     
 
+            <div class="description">
+            <p>Class Placeholder</p>                                </div>
     
     
     
@@ -134,7 +142,7 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    
+                    void
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method__register_controls">_register_controls</a>()
@@ -144,7 +152,7 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    
+                    void
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_render">render</a>()
@@ -160,7 +168,7 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method_get_name">
-        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Widgets/Exclusive/Placeholder/Placeholder.php#L15">line 15</a></div>
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Widgets/Exclusive/Placeholder/Placeholder.php#L40">line 40</a></div>
         <code>                    string
     <strong>get_name</strong>()
         </code>
@@ -190,7 +198,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_get_title">
-        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Widgets/Exclusive/Placeholder/Placeholder.php#L26">line 26</a></div>
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Widgets/Exclusive/Placeholder/Placeholder.php#L53">line 53</a></div>
         <code>                    string
     <strong>get_title</strong>()
         </code>
@@ -220,7 +228,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_get_icon">
-        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Widgets/Exclusive/Placeholder/Placeholder.php#L37">line 37</a></div>
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Widgets/Exclusive/Placeholder/Placeholder.php#L66">line 66</a></div>
         <code>                    string
     <strong>get_icon</strong>()
         </code>
@@ -250,7 +258,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_get_categories">
-        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Widgets/Exclusive/Placeholder/Placeholder.php#L50">line 50</a></div>
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Widgets/Exclusive/Placeholder/Placeholder.php#L81">line 81</a></div>
         <code>                    array
     <strong>get_categories</strong>()
         </code>
@@ -280,8 +288,8 @@
             </div>
                     <div class="method-item">
                     <h3 id="method__register_controls">
-        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Widgets/Exclusive/Placeholder/Placeholder.php#L61">line 61</a></div>
-        <code>            protected        
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Widgets/Exclusive/Placeholder/Placeholder.php#L96">line 96</a></div>
+        <code>            protected        void
     <strong>_register_controls</strong>()
         </code>
     </h3>
@@ -293,6 +301,15 @@
                                     <p>Register image widget controls.</p>                    <p>Adds different input fields to allow the user to change and customize the widget settings.</p>                            </div>
                 <div class="tags">
             
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
             
             
                     </div>
@@ -301,8 +318,8 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_render">
-        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Widgets/Exclusive/Placeholder/Placeholder.php#L87">line 87</a></div>
-        <code>            protected        
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Widgets/Exclusive/Placeholder/Placeholder.php#L126">line 126</a></div>
+        <code>            protected        void
     <strong>render</strong>()
         </code>
     </h3>
@@ -314,6 +331,15 @@
                                     <p>Render image widget output on the frontend.</p>                    <p>Written in PHP and used to generate the final HTML.</p>                            </div>
                 <div class="tags">
             
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
             
             
                     </div>

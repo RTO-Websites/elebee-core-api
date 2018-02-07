@@ -23,6 +23,12 @@
             <div id="content">
         <div id="left-column">
                 <div id="control-panel">
+                    <form action="#" method="GET">
+                <select id="version-switcher" name="version">
+                                            <option value="../../../../master/index.html" data-version="master">0.2.0</option>
+                                            <option value="../../../../0.1.0/index.html" data-version="0.1.0">0.1.0</option>
+                                    </select>
+            </form>
                 <script>
             $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
         </script>
@@ -79,12 +85,14 @@
     </div>
 
     <p>    class
-    <strong>Sticky</strong>        (<a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Extensions/Sticky/Sticky.php">View source</a>)
+    <strong>Sticky</strong>        extends <a href="../../../ElebeeCore/Extensions/ExtensionBase.html"><abbr title="ElebeeCore\Extensions\ExtensionBase">ExtensionBase</abbr></a>        (<a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Extensions/Sticky/Sticky.php">View source</a>)
 </p>
 
         
     
 
+            <div class="description">
+            <p>Class Sticky</p>                                </div>
     
     
     
@@ -104,10 +112,20 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    
+                    <a href="../../../ElebeeCore/Lib/ElebeeLoader.html"><abbr title="ElebeeCore\Lib\ElebeeLoader">ElebeeLoader</abbr></a>
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_load">load</a>()
+                    <a href="#method_getLoader">getLoader</a>()
+        
+                                            <p>The reference to the class that orchestrates the hooks with the theme.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../ElebeeCore/Lib/Hooking.html#method_getLoader"><abbr title="ElebeeCore\Lib\Hooking">Hooking</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_defineAdminHooks">defineAdminHooks</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -115,7 +133,18 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_definePublicHooks">definePublicHooks</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_extend">extend</a>(<abbr title="Elementor\Element_Base">Element_Base</abbr> $element)
@@ -126,7 +155,7 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    
+                    void
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_enqueueScrips">enqueueScrips</a>()
@@ -137,7 +166,7 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    
+                    void
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_setRenderAttributes">setRenderAttributes</a>(<abbr title="Elementor\Element_Base">Element_Base</abbr> $element)
@@ -154,7 +183,7 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Extensions/Sticky/Sticky.php#L51">line 51</a></div>
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Extensions/Sticky/Sticky.php#L70">line 70</a></div>
         <code>                    
     <strong>__construct</strong>()
         </code>
@@ -174,10 +203,40 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_load">
-        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Extensions/Sticky/Sticky.php#L64">line 64</a></div>
-        <code>                    
-    <strong>load</strong>()
+                    <h3 id="method_getLoader">
+        <div class="location">in <a href="../../../ElebeeCore/Lib/Hooking.html#method_getLoader"><abbr title="ElebeeCore\Lib\Hooking">Hooking</abbr></a> at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/Hooking.php#L82">line 82</a></div>
+        <code>                    <a href="../../../ElebeeCore/Lib/ElebeeLoader.html"><abbr title="ElebeeCore\Lib\ElebeeLoader">ElebeeLoader</abbr></a>
+    <strong>getLoader</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>The reference to the class that orchestrates the hooks with the theme.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../ElebeeCore/Lib/ElebeeLoader.html"><abbr title="ElebeeCore\Lib\ElebeeLoader">ElebeeLoader</abbr></a></td>
+            <td>Orchestrates the hooks of the theme.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_defineAdminHooks">
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Extensions/Sticky/Sticky.php#L83">line 83</a></div>
+        <code>                    void
+    <strong>defineAdminHooks</strong>()
         </code>
     </h3>
     <div class="details">
@@ -186,6 +245,43 @@
 
                 <div class="tags">
             
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_definePublicHooks">
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Extensions/Sticky/Sticky.php#L89">line 89</a></div>
+        <code>                    void
+    <strong>definePublicHooks</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
             
             
                     </div>
@@ -194,8 +290,8 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_extend">
-        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Extensions/Sticky/Sticky.php#L77">line 77</a></div>
-        <code>                    
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Extensions/Sticky/Sticky.php#L100">line 100</a></div>
+        <code>                    void
     <strong>extend</strong>(<abbr title="Elementor\Element_Base">Element_Base</abbr> $element)
         </code>
     </h3>
@@ -215,6 +311,15 @@
             </table>
 
             
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
             
             
                     </div>
@@ -223,8 +328,8 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_enqueueScrips">
-        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Extensions/Sticky/Sticky.php#L148">line 148</a></div>
-        <code>                    
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Extensions/Sticky/Sticky.php#L173">line 173</a></div>
+        <code>                    void
     <strong>enqueueScrips</strong>()
         </code>
     </h3>
@@ -234,6 +339,15 @@
 
                 <div class="tags">
             
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
             
             
                     </div>
@@ -242,8 +356,8 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setRenderAttributes">
-        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Extensions/Sticky/Sticky.php#L161">line 161</a></div>
-        <code>                    
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Extensions/Sticky/Sticky.php#L189">line 189</a></div>
+        <code>                    void
     <strong>setRenderAttributes</strong>(<abbr title="Elementor\Element_Base">Element_Base</abbr> $element)
         </code>
     </h3>
@@ -263,6 +377,15 @@
             </table>
 
             
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
             
             
                     </div>

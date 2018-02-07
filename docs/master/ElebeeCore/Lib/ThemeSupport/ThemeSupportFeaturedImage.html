@@ -23,6 +23,12 @@
             <div id="content">
         <div id="left-column">
                 <div id="control-panel">
+                    <form action="#" method="GET">
+                <select id="version-switcher" name="version">
+                                            <option value="../../../../master/index.html" data-version="master">0.2.0</option>
+                                            <option value="../../../../0.1.0/index.html" data-version="0.1.0">0.1.0</option>
+                                    </select>
+            </form>
                 <script>
             $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
         </script>
@@ -79,27 +85,15 @@
     </div>
 
     <p>    class
-    <strong>ThemeSupportFeaturedImage</strong>        (<a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/ThemeSupport/ThemeSupportFeaturedImage.php">View source</a>)
+    <strong>ThemeSupportFeaturedImage</strong>        extends <a href="../../../ElebeeCore/Lib/ThemeSupport/ThemeSupport.html"><abbr title="ElebeeCore\Lib\ThemeSupport\ThemeSupport">ThemeSupport</abbr></a>        (<a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/ThemeSupport/ThemeSupportFeaturedImage.php">View source</a>)
 </p>
 
         
     
 
+            <div class="description">
+            <p>Class ThemeSupportFeaturedImage</p>                                </div>
     
-            <h2>Traits</h2>
-
-        
-    <div class="container-fluid underlined">
-                    <div class="row">
-                <div class="col-md-6">
-                                            <a href="../../../ElebeeCore/Lib/Hooking.html"><abbr title="ElebeeCore\Lib\Hooking">Hooking</abbr></a>
-                                            
-                </div>
-                <div class="col-md-6">
-                    
-                </div>
-            </div>
-            </div>
     
     
     
@@ -111,10 +105,10 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method___construct">__construct</a>()
+                    <a href="#method___construct">__construct</a>(string $hook = &#039;after_setup_theme&#039;)
         
                                             <p>ThemeSupportFeaturedImage constructor.</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../../ElebeeCore/Lib/Hooking.html#method___construct"><abbr title="ElebeeCore\Lib\Hooking">Hooking</abbr></a></small></div>
+                <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -128,7 +122,7 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    
+                    void
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_defineAdminHooks">defineAdminHooks</a>()
@@ -139,21 +133,32 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    
+                    void
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_definePublicHooks">definePublicHooks</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
-                <div class="col-md-2"></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../ElebeeCore/Lib/ThemeSupport/ThemeSupport.html#method_definePublicHooks"><abbr title="ElebeeCore\Lib\ThemeSupport\ThemeSupport">ThemeSupport</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    
+                    string
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_addThemeSupportFeaturedImages">addThemeSupportFeaturedImages</a>()
+                    <a href="#method_getHook">getHook</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../ElebeeCore/Lib/ThemeSupport/ThemeSupport.html#method_getHook"><abbr title="ElebeeCore\Lib\ThemeSupport\ThemeSupport">ThemeSupport</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hookCallback">hookCallback</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -161,10 +166,21 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addThemeSupport">addThemeSupport</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../ElebeeCore/Lib/ThemeSupport/ThemeSupport.html#method_addThemeSupport"><abbr title="ElebeeCore\Lib\ThemeSupport\ThemeSupport">ThemeSupport</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     array
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_customColumns">customColumns</a>($columns)
+                    <a href="#method_customColumns">customColumns</a>(array $columns)
         
                                             <p>Add the featured image column to the Wordpress tables.</p>                </div>
                 <div class="col-md-2"></div>
@@ -174,7 +190,7 @@
                     void
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_customColumnsData">customColumnsData</a>($column, $postId)
+                    <a href="#method_customColumnsData">customColumnsData</a>(string $column, int $postId)
         
                                             <p>Prints data in a column.</p>                </div>
                 <div class="col-md-2"></div>
@@ -187,9 +203,9 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">in <a href="../../../ElebeeCore/Lib/Hooking.html#method___construct"><abbr title="ElebeeCore\Lib\Hooking">Hooking</abbr></a> at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/Hooking.php#L27">line 27</a></div>
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/ThemeSupport/ThemeSupportFeaturedImage.php#L37">line 37</a></div>
         <code>                    
-    <strong>__construct</strong>()
+    <strong>__construct</strong>(string $hook = &#039;after_setup_theme&#039;)
         </code>
     </h3>
     <div class="details">
@@ -199,6 +215,16 @@
                     <div class="method-description">
                                     <p>ThemeSupportFeaturedImage constructor.</p>                                                </div>
                 <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$hook</td>
+                <td></td>
+            </tr>
+            </table>
+
             
             
             
@@ -208,7 +234,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getLoader">
-        <div class="location">in <a href="../../../ElebeeCore/Lib/Hooking.html#method_getLoader"><abbr title="ElebeeCore\Lib\Hooking">Hooking</abbr></a> at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/Hooking.php#L64">line 64</a></div>
+        <div class="location">in <a href="../../../ElebeeCore/Lib/Hooking.html#method_getLoader"><abbr title="ElebeeCore\Lib\Hooking">Hooking</abbr></a> at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/Hooking.php#L82">line 82</a></div>
         <code>                    <a href="../../../ElebeeCore/Lib/ElebeeLoader.html"><abbr title="ElebeeCore\Lib\ElebeeLoader">ElebeeLoader</abbr></a>
     <strong>getLoader</strong>()
         </code>
@@ -238,8 +264,8 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_defineAdminHooks">
-        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/ThemeSupport/ThemeSupportFeaturedImage.php#L20">line 20</a></div>
-        <code>                    
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/ThemeSupport/ThemeSupportFeaturedImage.php#L46">line 46</a></div>
+        <code>                    void
     <strong>defineAdminHooks</strong>()
         </code>
     </h3>
@@ -249,6 +275,15 @@
 
                 <div class="tags">
             
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
             
             
                     </div>
@@ -257,8 +292,8 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_definePublicHooks">
-        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/ThemeSupport/ThemeSupportFeaturedImage.php#L33">line 33</a></div>
-        <code>                    
+        <div class="location">in <a href="../../../ElebeeCore/Lib/ThemeSupport/ThemeSupport.html#method_definePublicHooks"><abbr title="ElebeeCore\Lib\ThemeSupport\ThemeSupport">ThemeSupport</abbr></a> at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/ThemeSupport/ThemeSupport.php#L76">line 76</a></div>
+        <code>                    void
     <strong>definePublicHooks</strong>()
         </code>
     </h3>
@@ -268,6 +303,15 @@
 
                 <div class="tags">
             
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
             
             
                     </div>
@@ -275,10 +319,10 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_addThemeSupportFeaturedImages">
-        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/ThemeSupport/ThemeSupportFeaturedImage.php#L48">line 48</a></div>
-        <code>                    
-    <strong>addThemeSupportFeaturedImages</strong>()
+                    <h3 id="method_getHook">
+        <div class="location">in <a href="../../../ElebeeCore/Lib/ThemeSupport/ThemeSupport.html#method_getHook"><abbr title="ElebeeCore\Lib\ThemeSupport\ThemeSupport">ThemeSupport</abbr></a> at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/ThemeSupport/ThemeSupport.php#L58">line 58</a></div>
+        <code>                    string
+    <strong>getHook</strong>()
         </code>
     </h3>
     <div class="details">
@@ -287,6 +331,71 @@
 
                 <div class="tags">
             
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hookCallback">
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/ThemeSupport/ThemeSupportFeaturedImage.php#L61">line 61</a></div>
+        <code>                    void
+    <strong>hookCallback</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addThemeSupport">
+        <div class="location">in <a href="../../../ElebeeCore/Lib/ThemeSupport/ThemeSupport.html#method_addThemeSupport"><abbr title="ElebeeCore\Lib\ThemeSupport\ThemeSupport">ThemeSupport</abbr></a> at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/ThemeSupport/ThemeSupport.php#L94">line 94</a></div>
+        <code>                    void
+    <strong>addThemeSupport</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
             
             
                     </div>
@@ -295,9 +404,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_customColumns">
-        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/ThemeSupport/ThemeSupportFeaturedImage.php#L70">line 70</a></div>
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/ThemeSupport/ThemeSupportFeaturedImage.php#L84">line 84</a></div>
         <code>                    array
-    <strong>customColumns</strong>($columns)
+    <strong>customColumns</strong>(array $columns)
         </code>
     </h3>
     <div class="details">
@@ -311,7 +420,7 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td></td>
+                <td>array</td>
                 <td>$columns</td>
                 <td></td>
             </tr>
@@ -335,9 +444,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_customColumnsData">
-        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/ThemeSupport/ThemeSupportFeaturedImage.php#L90">line 90</a></div>
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/ThemeSupport/ThemeSupportFeaturedImage.php#L105">line 105</a></div>
         <code>                    void
-    <strong>customColumnsData</strong>($column, $postId)
+    <strong>customColumnsData</strong>(string $column, int $postId)
         </code>
     </h3>
     <div class="details">
@@ -351,12 +460,12 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td></td>
+                <td>string</td>
                 <td>$column</td>
                 <td></td>
             </tr>
                     <tr>
-                <td></td>
+                <td>int</td>
                 <td>$postId</td>
                 <td></td>
             </tr>

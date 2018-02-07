@@ -23,6 +23,12 @@
             <div id="content">
         <div id="left-column">
                 <div id="control-panel">
+                    <form action="#" method="GET">
+                <select id="version-switcher" name="version">
+                                            <option value="../../../master/index.html" data-version="master">0.2.0</option>
+                                            <option value="../../../0.1.0/index.html" data-version="0.1.0">0.1.0</option>
+                                    </select>
+            </form>
                 <script>
             $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
         </script>
@@ -85,6 +91,8 @@
         
     
 
+            <div class="description">
+            <p>Class Elebee</p>                                </div>
     
     
             <h2>Constants</h2>
@@ -112,6 +120,28 @@
                     <a href="#method___construct">__construct</a>()
         
                                             <p>Define the core functionality of the theme.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setupThemeCustomizer">setupThemeCustomizer</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setupThemeSettingsCoreData">setupThemeSettingsCoreData</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -147,7 +177,7 @@ WordPress and to define internationalization functionality.</p>                <
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    
+                    void
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_phpVersionFail">phpVersionFail</a>()
@@ -158,7 +188,7 @@ WordPress and to define internationalization functionality.</p>                <
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    static&nbsp;
+                    static&nbsp;void
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_run">run</a>()
@@ -174,7 +204,7 @@ WordPress and to define internationalization functionality.</p>                <
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/Elebee.php#L57">line 57</a></div>
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/Elebee.php#L76">line 76</a></div>
         <code>                    
     <strong>__construct</strong>()
         </code>
@@ -196,8 +226,64 @@ the public-facing side of the site.</p>                            </div>
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_setupThemeCustomizer">
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/Elebee.php#L166">line 166</a></div>
+        <code>                    void
+    <strong>setupThemeCustomizer</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setupThemeSettingsCoreData">
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/Elebee.php#L179">line 179</a></div>
+        <code>                    void
+    <strong>setupThemeSettingsCoreData</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_getThemeName">
-        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/Elebee.php#L180">line 180</a></div>
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/Elebee.php#L303">line 303</a></div>
         <code>                    string
     <strong>getThemeName</strong>()
         </code>
@@ -228,7 +314,7 @@ WordPress and to define internationalization functionality.</p>                 
             </div>
                     <div class="method-item">
                     <h3 id="method_getLoader">
-        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/Elebee.php#L190">line 190</a></div>
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/Elebee.php#L315">line 315</a></div>
         <code>                    <a href="../../ElebeeCore/Lib/ElebeeLoader.html"><abbr title="ElebeeCore\Lib\ElebeeLoader">ElebeeLoader</abbr></a>
     <strong>getLoader</strong>()
         </code>
@@ -258,7 +344,7 @@ WordPress and to define internationalization functionality.</p>                 
             </div>
                     <div class="method-item">
                     <h3 id="method_getVersion">
-        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/Elebee.php#L202">line 202</a></div>
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/Elebee.php#L328">line 328</a></div>
         <code>                    string
     <strong>getVersion</strong>()
         </code>
@@ -288,8 +374,8 @@ WordPress and to define internationalization functionality.</p>                 
             </div>
                     <div class="method-item">
                     <h3 id="method_phpVersionFail">
-        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/Elebee.php#L211">line 211</a></div>
-        <code>                    
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/Elebee.php#L339">line 339</a></div>
+        <code>                    void
     <strong>phpVersionFail</strong>()
         </code>
     </h3>
@@ -299,6 +385,15 @@ WordPress and to define internationalization functionality.</p>                 
 
                 <div class="tags">
             
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
             
             
                     </div>
@@ -307,8 +402,8 @@ WordPress and to define internationalization functionality.</p>                 
             </div>
                     <div class="method-item">
                     <h3 id="method_run">
-        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/Elebee.php#L228">line 228</a></div>
-        <code>        static            
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/Elebee.php#L358">line 358</a></div>
+        <code>        static            void
     <strong>run</strong>()
         </code>
     </h3>
@@ -320,6 +415,15 @@ WordPress and to define internationalization functionality.</p>                 
                                     <p>Run the loader to execute all of the hooks with WordPress.</p>                                                </div>
                 <div class="tags">
             
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
             
             
                     </div>

@@ -23,6 +23,12 @@
             <div id="content">
         <div id="left-column">
                 <div id="control-panel">
+                    <form action="#" method="GET">
+                <select id="version-switcher" name="version">
+                                            <option value="../../../master/index.html" data-version="master">0.2.0</option>
+                                            <option value="../../../0.1.0/index.html" data-version="0.1.0">0.1.0</option>
+                                    </select>
+            </form>
                 <script>
             $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
         </script>
@@ -97,7 +103,7 @@ so that it is ready for translation.</p>                    </div>
             <div class="container-fluid underlined">
                     <div class="row">
                 <div class="col-md-2 type">
-                    
+                    void
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_loadThemeTEXTDOMAIN">loadThemeTEXTDOMAIN</a>()
@@ -107,7 +113,7 @@ so that it is ready for translation.</p>                    </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    
+                    void
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_setDomain">setDomain</a>(string $domain)
@@ -123,8 +129,8 @@ so that it is ready for translation.</p>                    </div>
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method_loadThemeTEXTDOMAIN">
-        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/ElebeeI18n.php#L43">line 43</a></div>
-        <code>                    
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/ElebeeI18n.php#L51">line 51</a></div>
+        <code>                    void
     <strong>loadThemeTEXTDOMAIN</strong>()
         </code>
     </h3>
@@ -136,6 +142,15 @@ so that it is ready for translation.</p>                    </div>
                                     <p>Load the theme text domain for translation.</p>                                                </div>
                 <div class="tags">
             
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
             
             
                     </div>
@@ -144,8 +159,8 @@ so that it is ready for translation.</p>                    </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_setDomain">
-        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/ElebeeI18n.php#L58">line 58</a></div>
-        <code>                    
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/ElebeeI18n.php#L68">line 68</a></div>
+        <code>                    void
     <strong>setDomain</strong>(string $domain)
         </code>
     </h3>
@@ -167,6 +182,15 @@ so that it is ready for translation.</p>                    </div>
             </table>
 
             
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
             
             
                     </div>

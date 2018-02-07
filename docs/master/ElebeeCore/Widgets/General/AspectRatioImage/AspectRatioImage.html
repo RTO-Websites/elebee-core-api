@@ -23,6 +23,12 @@
             <div id="content">
         <div id="left-column">
                 <div id="control-panel">
+                    <form action="#" method="GET">
+                <select id="version-switcher" name="version">
+                                            <option value="../../../../../master/index.html" data-version="master">0.2.0</option>
+                                            <option value="../../../../../0.1.0/index.html" data-version="0.1.0">0.1.0</option>
+                                    </select>
+            </form>
                 <script>
             $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
         </script>
@@ -99,14 +105,14 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method___construct">__construct</a>(array $data = [], null $args = null)
+                    <a href="#method___construct">__construct</a>(array $data = [], array $args = null)
         
                                             <p>ElebeeWidget constructor.</p>                </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../../../ElebeeCore/Lib/ElebeeWidget.html#method___construct"><abbr title="ElebeeCore\Lib\ElebeeWidget">ElebeeWidget</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    
+                    void
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_defineAdminHooks">defineAdminHooks</a>()
@@ -117,7 +123,7 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    
+                    void
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_definePublicHooks">definePublicHooks</a>()
@@ -128,7 +134,7 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    
+                    bool
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_isPreviewMode">isPreviewMode</a>()
@@ -139,7 +145,7 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    
+                    void
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_enqueueStyles">enqueueStyles</a>()
@@ -150,7 +156,7 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    
+                    void
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_enqueueScripts">enqueueScripts</a>()
@@ -182,7 +188,7 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    string
+                    
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_get_name">get_name</a>()
@@ -192,7 +198,7 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    string
+                    
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_get_title">get_title</a>()
@@ -202,7 +208,7 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    string
+                    
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_get_icon">get_icon</a>()
@@ -222,7 +228,7 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    
+                    void
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_render">render</a>()
@@ -238,9 +244,9 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">in <a href="../../../../ElebeeCore/Lib/ElebeeWidget.html#method___construct"><abbr title="ElebeeCore\Lib\ElebeeWidget">ElebeeWidget</abbr></a> at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/ElebeeWidget.php#L26">line 26</a></div>
+        <div class="location">in <a href="../../../../ElebeeCore/Lib/ElebeeWidget.html#method___construct"><abbr title="ElebeeCore\Lib\ElebeeWidget">ElebeeWidget</abbr></a> at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/ElebeeWidget.php#L48">line 48</a></div>
         <code>                    
-    <strong>__construct</strong>(array $data = [], null $args = null)
+    <strong>__construct</strong>(array $data = [], array $args = null)
         </code>
     </h3>
     <div class="details">
@@ -259,7 +265,7 @@
                 <td></td>
             </tr>
                     <tr>
-                <td>null</td>
+                <td>array</td>
                 <td>$args</td>
                 <td></td>
             </tr>
@@ -267,6 +273,15 @@
 
             
             
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td></td>
+            </tr>
+            </table>
+
             
                     </div>
     </div>
@@ -274,8 +289,8 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_defineAdminHooks">
-        <div class="location">in <a href="../../../../ElebeeCore/Lib/ElebeeWidget.html#method_defineAdminHooks"><abbr title="ElebeeCore\Lib\ElebeeWidget">ElebeeWidget</abbr></a> at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/ElebeeWidget.php#L49">line 49</a></div>
-        <code>                    
+        <div class="location">in <a href="../../../../ElebeeCore/Lib/ElebeeWidget.html#method_defineAdminHooks"><abbr title="ElebeeCore\Lib\ElebeeWidget">ElebeeWidget</abbr></a> at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/ElebeeWidget.php#L75">line 75</a></div>
+        <code>                    void
     <strong>defineAdminHooks</strong>()
         </code>
     </h3>
@@ -285,6 +300,15 @@
 
                 <div class="tags">
             
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
             
             
                     </div>
@@ -293,8 +317,8 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_definePublicHooks">
-        <div class="location">in <a href="../../../../ElebeeCore/Lib/ElebeeWidget.html#method_definePublicHooks"><abbr title="ElebeeCore\Lib\ElebeeWidget">ElebeeWidget</abbr></a> at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/ElebeeWidget.php#L58">line 58</a></div>
-        <code>                    
+        <div class="location">in <a href="../../../../ElebeeCore/Lib/ElebeeWidget.html#method_definePublicHooks"><abbr title="ElebeeCore\Lib\ElebeeWidget">ElebeeWidget</abbr></a> at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/ElebeeWidget.php#L85">line 85</a></div>
+        <code>                    void
     <strong>definePublicHooks</strong>()
         </code>
     </h3>
@@ -304,6 +328,15 @@
 
                 <div class="tags">
             
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
             
             
                     </div>
@@ -312,8 +345,8 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_isPreviewMode">
-        <div class="location">in <a href="../../../../ElebeeCore/Lib/ElebeeWidget.html#method_isPreviewMode"><abbr title="ElebeeCore\Lib\ElebeeWidget">ElebeeWidget</abbr></a> at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/ElebeeWidget.php#L71">line 71</a></div>
-        <code>                    
+        <div class="location">in <a href="../../../../ElebeeCore/Lib/ElebeeWidget.html#method_isPreviewMode"><abbr title="ElebeeCore\Lib\ElebeeWidget">ElebeeWidget</abbr></a> at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/ElebeeWidget.php#L103">line 103</a></div>
+        <code>                    bool
     <strong>isPreviewMode</strong>()
         </code>
     </h3>
@@ -323,6 +356,15 @@
 
                 <div class="tags">
             
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
             
             
                     </div>
@@ -331,8 +373,8 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_enqueueStyles">
-        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Widgets/General/AspectRatioImage/AspectRatioImage.php#L25">line 25</a></div>
-        <code>                    
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Widgets/General/AspectRatioImage/AspectRatioImage.php#L44">line 44</a></div>
+        <code>                    void
     <strong>enqueueStyles</strong>()
         </code>
     </h3>
@@ -342,6 +384,15 @@
 
                 <div class="tags">
             
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
             
             
                     </div>
@@ -350,8 +401,8 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_enqueueScripts">
-        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Widgets/General/AspectRatioImage/AspectRatioImage.php#L29">line 29</a></div>
-        <code>                    
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Widgets/General/AspectRatioImage/AspectRatioImage.php#L51">line 51</a></div>
+        <code>                    void
     <strong>enqueueScripts</strong>()
         </code>
     </h3>
@@ -361,6 +412,15 @@
 
                 <div class="tags">
             
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
             
             
                     </div>
@@ -369,7 +429,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getLoader">
-        <div class="location">in <a href="../../../../ElebeeCore/Lib/ElebeeWidget.html#method_getLoader"><abbr title="ElebeeCore\Lib\ElebeeWidget">ElebeeWidget</abbr></a> at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/ElebeeWidget.php#L96">line 96</a></div>
+        <div class="location">in <a href="../../../../ElebeeCore/Lib/ElebeeWidget.html#method_getLoader"><abbr title="ElebeeCore\Lib\ElebeeWidget">ElebeeWidget</abbr></a> at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/ElebeeWidget.php#L136">line 136</a></div>
         <code>                    <a href="../../../../ElebeeCore/Lib/ElebeeLoader.html"><abbr title="ElebeeCore\Lib\ElebeeLoader">ElebeeLoader</abbr></a>
     <strong>getLoader</strong>()
         </code>
@@ -397,7 +457,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_get_categories">
-        <div class="location">in <a href="../../../../ElebeeCore/Lib/ElebeeWidget.html#method_get_categories"><abbr title="ElebeeCore\Lib\ElebeeWidget">ElebeeWidget</abbr></a> at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/ElebeeWidget.php#L116">line 116</a></div>
+        <div class="location">in <a href="../../../../ElebeeCore/Lib/ElebeeWidget.html#method_get_categories"><abbr title="ElebeeCore\Lib\ElebeeWidget">ElebeeWidget</abbr></a> at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/ElebeeWidget.php#L154">line 154</a></div>
         <code>                    array
     <strong>get_categories</strong>()
         </code>
@@ -430,8 +490,8 @@ When multiple categories passed, Elementor uses the first one.</p>              
             </div>
                     <div class="method-item">
                     <h3 id="method_get_name">
-        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Widgets/General/AspectRatioImage/AspectRatioImage.php#L40">line 40</a></div>
-        <code>                    string
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Widgets/General/AspectRatioImage/AspectRatioImage.php#L60">line 60</a></div>
+        <code>                    
     <strong>get_name</strong>()
         </code>
     </h3>
@@ -443,15 +503,6 @@ When multiple categories passed, Elementor uses the first one.</p>              
                                     <p>Retrieve image widget name.</p>                                                </div>
                 <div class="tags">
             
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>string</td>
-            <td>Widget name.</td>
-        </tr>
-    </table>
-
             
             
                     </div>
@@ -460,8 +511,8 @@ When multiple categories passed, Elementor uses the first one.</p>              
             </div>
                     <div class="method-item">
                     <h3 id="method_get_title">
-        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Widgets/General/AspectRatioImage/AspectRatioImage.php#L51">line 51</a></div>
-        <code>                    string
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Widgets/General/AspectRatioImage/AspectRatioImage.php#L71">line 71</a></div>
+        <code>                    
     <strong>get_title</strong>()
         </code>
     </h3>
@@ -473,15 +524,6 @@ When multiple categories passed, Elementor uses the first one.</p>              
                                     <p>Retrieve image widget title.</p>                                                </div>
                 <div class="tags">
             
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>string</td>
-            <td>Widget title.</td>
-        </tr>
-    </table>
-
             
             
                     </div>
@@ -490,8 +532,8 @@ When multiple categories passed, Elementor uses the first one.</p>              
             </div>
                     <div class="method-item">
                     <h3 id="method_get_icon">
-        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Widgets/General/AspectRatioImage/AspectRatioImage.php#L62">line 62</a></div>
-        <code>                    string
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Widgets/General/AspectRatioImage/AspectRatioImage.php#L82">line 82</a></div>
+        <code>                    
     <strong>get_icon</strong>()
         </code>
     </h3>
@@ -503,15 +545,6 @@ When multiple categories passed, Elementor uses the first one.</p>              
                                     <p>Retrieve image widget icon.</p>                                                </div>
                 <div class="tags">
             
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>string</td>
-            <td>Widget icon.</td>
-        </tr>
-    </table>
-
             
             
                     </div>
@@ -520,7 +553,7 @@ When multiple categories passed, Elementor uses the first one.</p>              
             </div>
                     <div class="method-item">
                     <h3 id="method__register_controls">
-        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Widgets/General/AspectRatioImage/AspectRatioImage.php#L73">line 73</a></div>
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Widgets/General/AspectRatioImage/AspectRatioImage.php#L95">line 95</a></div>
         <code>            protected        
     <strong>_register_controls</strong>()
         </code>
@@ -541,8 +574,8 @@ When multiple categories passed, Elementor uses the first one.</p>              
             </div>
                     <div class="method-item">
                     <h3 id="method_render">
-        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Widgets/General/AspectRatioImage/AspectRatioImage.php#L278">line 278</a></div>
-        <code>            protected        
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Widgets/General/AspectRatioImage/AspectRatioImage.php#L304">line 304</a></div>
+        <code>            protected        void
     <strong>render</strong>()
         </code>
     </h3>
@@ -554,6 +587,15 @@ When multiple categories passed, Elementor uses the first one.</p>              
                                     <p>Render image widget output on the frontend.</p>                    <p>Written in PHP and used to generate the final HTML.</p>                            </div>
                 <div class="tags">
             
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
             
             
                     </div>

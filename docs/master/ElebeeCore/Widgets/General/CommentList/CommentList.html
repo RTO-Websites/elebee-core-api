@@ -23,6 +23,12 @@
             <div id="content">
         <div id="left-column">
                 <div id="control-panel">
+                    <form action="#" method="GET">
+                <select id="version-switcher" name="version">
+                                            <option value="../../../../../master/index.html" data-version="master">0.2.0</option>
+                                            <option value="../../../../../0.1.0/index.html" data-version="0.1.0">0.1.0</option>
+                                    </select>
+            </form>
                 <script>
             $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
         </script>
@@ -128,15 +134,14 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method___construct">__construct</a>(array $data = [], $args = null)
+                    <a href="#method___construct">__construct</a>(array $data = [], array $args = null)
         
-                                            <p class="no-description">No description</p>
-                                    </div>
+                                            <p>CommentList constructor.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    string
+                    
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_get_name">get_name</a>()
@@ -146,7 +151,7 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    string
+                    
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_get_title">get_title</a>()
@@ -156,7 +161,7 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    string
+                    
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_get_icon">get_icon</a>()
@@ -166,7 +171,7 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    array
+                    
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_get_categories">get_categories</a>()
@@ -186,7 +191,7 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    
+                    string
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_getFirstButton">getFirstButton</a>(<a href="../../../../ElebeeCore/Lib/Template.html"><abbr title="ElebeeCore\Lib\Template">Template</abbr></a> $renderer)
@@ -197,7 +202,7 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    
+                    string
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_getLastButton">getLastButton</a>(<a href="../../../../ElebeeCore/Lib/Template.html"><abbr title="ElebeeCore\Lib\Template">Template</abbr></a> $renderer)
@@ -208,7 +213,7 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    
+                    string
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_getCommentPagination">getCommentPagination</a>()
@@ -219,10 +224,10 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    
+                    array
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_getAllCommentPages">getAllCommentPages</a>()
+                    <a href="#method_getCommentPages">getCommentPages</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -230,7 +235,7 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    
+                    void
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_setPaginationSettings">setPaginationSettings</a>(array $comments)
@@ -241,7 +246,7 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    
+                    void
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_render">render</a>()
@@ -257,15 +262,17 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Widgets/General/CommentList/CommentList.php#L46">line 46</a></div>
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Widgets/General/CommentList/CommentList.php#L72">line 72</a></div>
         <code>                    
-    <strong>__construct</strong>(array $data = [], $args = null)
+    <strong>__construct</strong>(array $data = [], array $args = null)
         </code>
     </h3>
     <div class="details">
             
     
 
+                    <div class="method-description">
+                                    <p>CommentList constructor.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -276,7 +283,7 @@
                 <td></td>
             </tr>
                     <tr>
-                <td></td>
+                <td>array</td>
                 <td>$args</td>
                 <td></td>
             </tr>
@@ -284,6 +291,15 @@
 
             
             
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td></td>
+            </tr>
+            </table>
+
             
                     </div>
     </div>
@@ -291,8 +307,8 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_get_name">
-        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Widgets/General/CommentList/CommentList.php#L60">line 60</a></div>
-        <code>                    string
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Widgets/General/CommentList/CommentList.php#L86">line 86</a></div>
+        <code>                    
     <strong>get_name</strong>()
         </code>
     </h3>
@@ -304,15 +320,6 @@
                                     <p>Retrieve image widget name.</p>                                                </div>
                 <div class="tags">
             
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>string</td>
-            <td>Widget name.</td>
-        </tr>
-    </table>
-
             
             
                     </div>
@@ -321,8 +328,8 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_get_title">
-        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Widgets/General/CommentList/CommentList.php#L71">line 71</a></div>
-        <code>                    string
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Widgets/General/CommentList/CommentList.php#L97">line 97</a></div>
+        <code>                    
     <strong>get_title</strong>()
         </code>
     </h3>
@@ -334,15 +341,6 @@
                                     <p>Retrieve image widget title.</p>                                                </div>
                 <div class="tags">
             
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>string</td>
-            <td>Widget title.</td>
-        </tr>
-    </table>
-
             
             
                     </div>
@@ -351,8 +349,8 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_get_icon">
-        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Widgets/General/CommentList/CommentList.php#L82">line 82</a></div>
-        <code>                    string
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Widgets/General/CommentList/CommentList.php#L108">line 108</a></div>
+        <code>                    
     <strong>get_icon</strong>()
         </code>
     </h3>
@@ -364,15 +362,6 @@
                                     <p>Retrieve image widget icon.</p>                                                </div>
                 <div class="tags">
             
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>string</td>
-            <td>Widget icon.</td>
-        </tr>
-    </table>
-
             
             
                     </div>
@@ -381,8 +370,8 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_get_categories">
-        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Widgets/General/CommentList/CommentList.php#L95">line 95</a></div>
-        <code>                    array
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Widgets/General/CommentList/CommentList.php#L121">line 121</a></div>
+        <code>                    
     <strong>get_categories</strong>()
         </code>
     </h3>
@@ -394,15 +383,6 @@
                                     <p>Retrieve the list of categories the image gallery widget belongs to.</p>                    <p>Used to determine where to display the widget in the editor.</p>                            </div>
                 <div class="tags">
             
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>array</td>
-            <td>Widget categories.</td>
-        </tr>
-    </table>
-
             
             
                     </div>
@@ -411,7 +391,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method__register_controls">
-        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Widgets/General/CommentList/CommentList.php#L106">line 106</a></div>
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Widgets/General/CommentList/CommentList.php#L134">line 134</a></div>
         <code>            protected        
     <strong>_register_controls</strong>()
         </code>
@@ -432,8 +412,8 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getFirstButton">
-        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Widgets/General/CommentList/CommentList.php#L616">line 616</a></div>
-        <code>            protected        
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Widgets/General/CommentList/CommentList.php#L652">line 652</a></div>
+        <code>            protected        string
     <strong>getFirstButton</strong>(<a href="../../../../ElebeeCore/Lib/Template.html"><abbr title="ElebeeCore\Lib\Template">Template</abbr></a> $renderer)
         </code>
     </h3>
@@ -453,6 +433,15 @@
             </table>
 
             
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
             
             
                     </div>
@@ -461,8 +450,8 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getLastButton">
-        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Widgets/General/CommentList/CommentList.php#L628">line 628</a></div>
-        <code>            protected        
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Widgets/General/CommentList/CommentList.php#L672">line 672</a></div>
+        <code>            protected        string
     <strong>getLastButton</strong>(<a href="../../../../ElebeeCore/Lib/Template.html"><abbr title="ElebeeCore\Lib\Template">Template</abbr></a> $renderer)
         </code>
     </h3>
@@ -482,6 +471,15 @@
             </table>
 
             
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
             
             
                     </div>
@@ -490,8 +488,8 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getCommentPagination">
-        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Widgets/General/CommentList/CommentList.php#L640">line 640</a></div>
-        <code>            protected        
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Widgets/General/CommentList/CommentList.php#L691">line 691</a></div>
+        <code>            protected        string
     <strong>getCommentPagination</strong>()
         </code>
     </h3>
@@ -501,6 +499,15 @@
 
                 <div class="tags">
             
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
             
             
                     </div>
@@ -508,10 +515,10 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_getAllCommentPages">
-        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Widgets/General/CommentList/CommentList.php#L703">line 703</a></div>
-        <code>            protected        
-    <strong>getAllCommentPages</strong>()
+                    <h3 id="method_getCommentPages">
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Widgets/General/CommentList/CommentList.php#L761">line 761</a></div>
+        <code>            protected        array
+    <strong>getCommentPages</strong>()
         </code>
     </h3>
     <div class="details">
@@ -520,6 +527,15 @@
 
                 <div class="tags">
             
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
             
             
                     </div>
@@ -528,8 +544,8 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setPaginationSettings">
-        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Widgets/General/CommentList/CommentList.php#L724">line 724</a></div>
-        <code>            protected        
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Widgets/General/CommentList/CommentList.php#L795">line 795</a></div>
+        <code>            protected        void
     <strong>setPaginationSettings</strong>(array $comments)
         </code>
     </h3>
@@ -549,6 +565,15 @@
             </table>
 
             
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
             
             
                     </div>
@@ -557,8 +582,8 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_render">
-        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Widgets/General/CommentList/CommentList.php#L769">line 769</a></div>
-        <code>            protected        
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Widgets/General/CommentList/CommentList.php#L848">line 848</a></div>
+        <code>            protected        void
     <strong>render</strong>()
         </code>
     </h3>
@@ -570,6 +595,15 @@
                                     <p>Render image widget output on the frontend.</p>                    <p>Written in PHP and used to generate the final HTML.</p>                            </div>
                 <div class="tags">
             
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
             
             
                     </div>

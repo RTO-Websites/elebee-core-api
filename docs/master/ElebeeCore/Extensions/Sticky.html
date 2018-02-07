@@ -23,6 +23,12 @@
             <div id="content">
         <div id="left-column">
                 <div id="control-panel">
+                    <form action="#" method="GET">
+                <select id="version-switcher" name="version">
+                                            <option value="../../../master/index.html" data-version="master">0.2.0</option>
+                                            <option value="../../../0.1.0/index.html" data-version="0.1.0">0.1.0</option>
+                                    </select>
+            </form>
                 <script>
             $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
         </script>
@@ -85,7 +91,7 @@
                                             
                 </div>
                 <div class="col-md-6">
-                    
+                    Class Sticky
                 </div>
             </div>
             </div>

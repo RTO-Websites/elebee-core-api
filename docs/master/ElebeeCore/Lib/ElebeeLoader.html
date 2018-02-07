@@ -23,6 +23,12 @@
             <div id="content">
         <div id="left-column">
                 <div id="control-panel">
+                    <form action="#" method="GET">
+                <select id="version-switcher" name="version">
+                                            <option value="../../../master/index.html" data-version="master">0.2.0</option>
+                                            <option value="../../../0.1.0/index.html" data-version="0.1.0">0.1.0</option>
+                                    </select>
+            </form>
                 <script>
             $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
         </script>
@@ -129,27 +135,27 @@ run function to execute the list of actions and filters.</p>                    
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    
+                    void
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_addAction">addAction</a>(string $hook, object $component, string $callback, int $priority = 10, int $acceptedArgs = 1)
+                    <a href="#method_addAction">addAction</a>(string $hook, object|string $component, string $callback, int $priority = 10, int $acceptedArgs = 1)
         
                                             <p>Add a new action to the collection to be registered with WordPress.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    
+                    void
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_addFilter">addFilter</a>(string $hook, object $component, string $callback, int $priority = 10, int $acceptedArgs = 1)
+                    <a href="#method_addFilter">addFilter</a>(string $hook, object|string $component, string $callback, int $priority = 10, int $acceptedArgs = 1)
         
                                             <p>Add a new filter to the collection to be registered with WordPress.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    
+                    void
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_run">run</a>()
@@ -165,7 +171,7 @@ run function to execute the list of actions and filters.</p>                    
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/ElebeeLoader.php#L49">line 49</a></div>
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/ElebeeLoader.php#L55">line 55</a></div>
         <code>                    
     <strong>__construct</strong>()
         </code>
@@ -186,9 +192,9 @@ run function to execute the list of actions and filters.</p>                    
             </div>
                     <div class="method-item">
                     <h3 id="method_addAction">
-        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/ElebeeLoader.php#L66">line 66</a></div>
-        <code>                    
-    <strong>addAction</strong>(string $hook, object $component, string $callback, int $priority = 10, int $acceptedArgs = 1)
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/ElebeeLoader.php#L75">line 75</a></div>
+        <code>                    void
+    <strong>addAction</strong>(string $hook, object|string $component, string $callback, int $priority = 10, int $acceptedArgs = 1)
         </code>
     </h3>
     <div class="details">
@@ -207,7 +213,7 @@ run function to execute the list of actions and filters.</p>                    
                 <td>The name of the WordPress action that is being registered.</td>
             </tr>
                     <tr>
-                <td>object</td>
+                <td>object|string</td>
                 <td>$component</td>
                 <td>A reference to the instance of the object on which the action is defined.</td>
             </tr>
@@ -219,16 +225,25 @@ run function to execute the list of actions and filters.</p>                    
                     <tr>
                 <td>int</td>
                 <td>$priority</td>
-                <td>Optional    $priority         The priority at which the function should be fired.</td>
+                <td>(optional) The priority at which the function should be fired.</td>
             </tr>
                     <tr>
                 <td>int</td>
                 <td>$acceptedArgs</td>
-                <td>Optional    $acceptedArgs    The number of arguments that should be passed to the $callback.</td>
+                <td>(optional) The number of arguments that should be passed to the $callback.</td>
             </tr>
             </table>
 
             
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
             
             
                     </div>
@@ -237,9 +252,9 @@ run function to execute the list of actions and filters.</p>                    
             </div>
                     <div class="method-item">
                     <h3 id="method_addFilter">
-        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/ElebeeLoader.php#L80">line 80</a></div>
-        <code>                    
-    <strong>addFilter</strong>(string $hook, object $component, string $callback, int $priority = 10, int $acceptedArgs = 1)
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/ElebeeLoader.php#L94">line 94</a></div>
+        <code>                    void
+    <strong>addFilter</strong>(string $hook, object|string $component, string $callback, int $priority = 10, int $acceptedArgs = 1)
         </code>
     </h3>
     <div class="details">
@@ -258,7 +273,7 @@ run function to execute the list of actions and filters.</p>                    
                 <td>The name of the WordPress filter that is being registered.</td>
             </tr>
                     <tr>
-                <td>object</td>
+                <td>object|string</td>
                 <td>$component</td>
                 <td>A reference to the instance of the object on which the filter is defined.</td>
             </tr>
@@ -270,16 +285,25 @@ run function to execute the list of actions and filters.</p>                    
                     <tr>
                 <td>int</td>
                 <td>$priority</td>
-                <td>Optional    $priority         The priority at which the function should be fired.</td>
+                <td>(optional) The priority at which the function should be fired.</td>
             </tr>
                     <tr>
                 <td>int</td>
                 <td>$acceptedArgs</td>
-                <td>Optional    $acceptedArgs    The number of arguments that should be passed to the $callback.</td>
+                <td>(optional) The number of arguments that should be passed to the $callback.</td>
             </tr>
             </table>
 
             
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
             
             
                     </div>
@@ -288,8 +312,8 @@ run function to execute the list of actions and filters.</p>                    
             </div>
                     <div class="method-item">
                     <h3 id="method_run">
-        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/ElebeeLoader.php#L117">line 117</a></div>
-        <code>                    
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/ElebeeLoader.php#L135">line 135</a></div>
+        <code>                    void
     <strong>run</strong>()
         </code>
     </h3>
@@ -301,6 +325,15 @@ run function to execute the list of actions and filters.</p>                    
                                     <p>Register the filters and actions with WordPress.</p>                                                </div>
                 <div class="tags">
             
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
             
             
                     </div>

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>ElebeeCore\Widgets\BetterWidgetImageGallery\Lib\Renderer | Elebee Core API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/sami.css">
+        <script src="../../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../../js/bootstrap.min.js"></script>
+        <script src="../../../../js/typeahead.min.js"></script>
+        <script src="../../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:ElebeeCore_Widgets_BetterWidgetImageGallery_Lib_Renderer" data-root-path="../../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                    <form action="#" method="GET">
+                <select id="version-switcher" name="version">
+                                            <option value="../../../../../master/index.html" data-version="master">0.2.0</option>
+                                            <option value="../../../../../0.1.0/index.html" data-version="0.1.0">0.1.0</option>
+                                    </select>
+            </form>
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Elebee Core API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../ElebeeCore.html">ElebeeCore</a></li><li class="backslash">\</li><li><a href="../../../../ElebeeCore/Widgets.html">Widgets</a></li><li class="backslash">\</li><li><a href="../../../../ElebeeCore/Widgets/BetterWidgetImageGallery.html">BetterWidgetImageGallery</a></li><li class="backslash">\</li><li><a href="../../../../ElebeeCore/Widgets/BetterWidgetImageGallery/Lib.html">Lib</a></li><li class="backslash">\</li><li>Renderer</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            Renderer
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>Renderer</strong>        implements
+        <abbr title="ElebeeCore\Lib\Visitor">Visitor</abbr>        (<a href="https://github.com/RTO-Websites/elebee-core/blob/0.1.0/src/Widgets/General/BetterWidgetImageGallery/Lib/Renderer.php">View source</a>)
+</p>
+
+        
+    
+
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(array $widgetSettings)
+        
+                                            <p>Renderer constructor.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_inModal">inModal</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getModalId">getModalId</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_visit">visit</a>(<abbr title="ElebeeCore\Lib\Visitee">Visitee</abbr> $visitee)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getRenderedSedcard">getRenderedSedcard</a>(<a href="../../../../ElebeeCore/Widgets/BetterWidgetImageGallery/Lib/Gallery.html"><abbr title="ElebeeCore\Widgets\BetterWidgetImageGallery\Lib\Gallery">Gallery</abbr></a> $gallery)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/0.1.0/src/Widgets/General/BetterWidgetImageGallery/Lib/Renderer.php#L31">line 31</a></div>
+        <code>                    
+    <strong>__construct</strong>(array $widgetSettings)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Renderer constructor.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$widgetSettings</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_inModal">
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/0.1.0/src/Widgets/General/BetterWidgetImageGallery/Lib/Renderer.php#L41">line 41</a></div>
+        <code>                    bool
+    <strong>inModal</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getModalId">
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/0.1.0/src/Widgets/General/BetterWidgetImageGallery/Lib/Renderer.php#L50">line 50</a></div>
+        <code>                    string
+    <strong>getModalId</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_visit">
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/0.1.0/src/Widgets/General/BetterWidgetImageGallery/Lib/Renderer.php#L59">line 59</a></div>
+        <code>                    
+    <strong>visit</strong>(<abbr title="ElebeeCore\Lib\Visitee">Visitee</abbr> $visitee)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="ElebeeCore\Lib\Visitee">Visitee</abbr></td>
+                <td>$visitee</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRenderedSedcard">
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/0.1.0/src/Widgets/General/BetterWidgetImageGallery/Lib/Renderer.php#L169">line 169</a></div>
+        <code>                    string
+    <strong>getRenderedSedcard</strong>(<a href="../../../../ElebeeCore/Widgets/BetterWidgetImageGallery/Lib/Gallery.html"><abbr title="ElebeeCore\Widgets\BetterWidgetImageGallery\Lib\Gallery">Gallery</abbr></a> $gallery)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../ElebeeCore/Widgets/BetterWidgetImageGallery/Lib/Gallery.html"><abbr title="ElebeeCore\Widgets\BetterWidgetImageGallery\Lib\Gallery">Gallery</abbr></a></td>
+                <td>$gallery</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

@@ -25,7 +25,8 @@
                 <div id="control-panel">
                     <form action="#" method="GET">
                 <select id="version-switcher" name="version">
-                                            <option value="../../../../master/index.html" data-version="master">0.2.0</option>
+                                            <option value="../../../../master/index.html" data-version="master">0.3.0</option>
+                                            <option value="../../../../0.2.0/index.html" data-version="0.2.0">0.2.0</option>
                                             <option value="../../../../0.1.0/index.html" data-version="0.1.0">0.1.0</option>
                                     </select>
             </form>
@@ -127,9 +128,9 @@
                 <div class="col-md-8 type">
                     <a href="#method_defineAdminHooks">defineAdminHooks</a>()
         
-                                            <p class="no-description">No description</p>
-                                    </div>
-                <div class="col-md-2"></div>
+                                            <p>Register all of the hooks related to the admin area functionality
+of the theme.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../ElebeeCore/Extensions/ExtensionBase.html#method_defineAdminHooks"><abbr title="ElebeeCore\Extensions\ExtensionBase">ExtensionBase</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -147,7 +148,7 @@
                     void
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_extend">extend</a>(<abbr title="Elementor\Element_Base">Element_Base</abbr> $element)
+                    <a href="#method_extend">extend</a>(<abbr title="Elementor\Controls_Stack">Controls_Stack</abbr> $element)
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -183,7 +184,7 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Extensions/Sticky/Sticky.php#L70">line 70</a></div>
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Extensions/Sticky/Sticky.php#L71">line 71</a></div>
         <code>                    
     <strong>__construct</strong>()
         </code>
@@ -234,7 +235,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_defineAdminHooks">
-        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Extensions/Sticky/Sticky.php#L83">line 83</a></div>
+        <div class="location">in <a href="../../../ElebeeCore/Extensions/ExtensionBase.html#method_defineAdminHooks"><abbr title="ElebeeCore\Extensions\ExtensionBase">ExtensionBase</abbr></a> at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Extensions/ExtensionBase.php#L56">line 56</a></div>
         <code>                    void
     <strong>defineAdminHooks</strong>()
         </code>
@@ -243,6 +244,9 @@
             
     
 
+                    <div class="method-description">
+                                    <p>Register all of the hooks related to the admin area functionality
+of the theme.</p>                                                </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
@@ -262,7 +266,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_definePublicHooks">
-        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Extensions/Sticky/Sticky.php#L89">line 89</a></div>
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Extensions/Sticky/Sticky.php#L84">line 84</a></div>
         <code>                    void
     <strong>definePublicHooks</strong>()
         </code>
@@ -290,9 +294,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_extend">
-        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Extensions/Sticky/Sticky.php#L100">line 100</a></div>
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Extensions/Sticky/Sticky.php#L95">line 95</a></div>
         <code>                    void
-    <strong>extend</strong>(<abbr title="Elementor\Element_Base">Element_Base</abbr> $element)
+    <strong>extend</strong>(<abbr title="Elementor\Controls_Stack">Controls_Stack</abbr> $element)
         </code>
     </h3>
     <div class="details">
@@ -304,7 +308,7 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td><abbr title="Elementor\Element_Base">Element_Base</abbr></td>
+                <td><abbr title="Elementor\Controls_Stack">Controls_Stack</abbr></td>
                 <td>$element</td>
                 <td></td>
             </tr>
@@ -328,7 +332,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_enqueueScrips">
-        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Extensions/Sticky/Sticky.php#L173">line 173</a></div>
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Extensions/Sticky/Sticky.php#L168">line 168</a></div>
         <code>                    void
     <strong>enqueueScrips</strong>()
         </code>
@@ -356,7 +360,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setRenderAttributes">
-        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Extensions/Sticky/Sticky.php#L189">line 189</a></div>
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Extensions/Sticky/Sticky.php#L184">line 184</a></div>
         <code>                    void
     <strong>setRenderAttributes</strong>(<abbr title="Elementor\Element_Base">Element_Base</abbr> $element)
         </code>

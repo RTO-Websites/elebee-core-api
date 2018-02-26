@@ -25,7 +25,8 @@
                 <div id="control-panel">
                     <form action="#" method="GET">
                 <select id="version-switcher" name="version">
-                                            <option value="../../../../master/index.html" data-version="master">0.2.0</option>
+                                            <option value="../../../../master/index.html" data-version="master">0.3.0</option>
+                                            <option value="../../../../0.2.0/index.html" data-version="0.2.0">0.2.0</option>
                                             <option value="../../../../0.1.0/index.html" data-version="0.1.0">0.1.0</option>
                                     </select>
             </form>
@@ -85,7 +86,7 @@
     </div>
 
     <p>    class
-    <strong>MetaKeyMedia</strong>        extends <a href="../../../ElebeeCore/Lib/MetaBox/MetaKey.html"><abbr title="ElebeeCore\Lib\MetaBox\MetaKey">MetaKey</abbr></a>        (<a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/MetaBox/MetaKeyMedia.php">View source</a>)
+    <strong>MetaKeyMedia</strong>        extends <a href="../../../ElebeeCore/Lib/MetaBox/MetaKeyBase.html"><abbr title="ElebeeCore\Lib\MetaBox\MetaKeyBase">MetaKeyBase</abbr></a>        (<a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/MetaBox/MetaKeyMedia.php">View source</a>)
 </p>
 
         
@@ -137,7 +138,7 @@
                     <a href="#method_getKey">getKey</a>()
         
                                             <p>Get the key that identifies the meta key.</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../../ElebeeCore/Lib/MetaBox/MetaKey.html#method_getKey"><abbr title="ElebeeCore\Lib\MetaBox\MetaKey">MetaKey</abbr></a></small></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../ElebeeCore/Lib/MetaBox/MetaKeyBase.html#method_getKey"><abbr title="ElebeeCore\Lib\MetaBox\MetaKeyBase">MetaKeyBase</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -147,7 +148,7 @@
                     <a href="#method_getLabel">getLabel</a>()
         
                                             <p>Get the meta key's label.</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../../ElebeeCore/Lib/MetaBox/MetaKey.html#method_getLabel"><abbr title="ElebeeCore\Lib\MetaBox\MetaKey">MetaKey</abbr></a></small></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../ElebeeCore/Lib/MetaBox/MetaKeyBase.html#method_getLabel"><abbr title="ElebeeCore\Lib\MetaBox\MetaKeyBase">MetaKeyBase</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -157,7 +158,7 @@
                     <a href="#method_getType">getType</a>()
         
                                             <p>Get the meta key's type.</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../../ElebeeCore/Lib/MetaBox/MetaKey.html#method_getType"><abbr title="ElebeeCore\Lib\MetaBox\MetaKey">MetaKey</abbr></a></small></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../ElebeeCore/Lib/MetaBox/MetaKeyBase.html#method_getType"><abbr title="ElebeeCore\Lib\MetaBox\MetaKeyBase">MetaKeyBase</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -167,7 +168,7 @@
                     <a href="#method_getTemplate">getTemplate</a>()
         
                                             <p>Get the Template that renders the meta key.</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../../ElebeeCore/Lib/MetaBox/MetaKey.html#method_getTemplate"><abbr title="ElebeeCore\Lib\MetaBox\MetaKey">MetaKey</abbr></a></small></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../ElebeeCore/Lib/MetaBox/MetaKeyBase.html#method_getTemplate"><abbr title="ElebeeCore\Lib\MetaBox\MetaKeyBase">MetaKeyBase</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -177,7 +178,7 @@
                     <a href="#method_setTemplate">setTemplate</a>(<a href="../../../ElebeeCore/Lib/Template.html"><abbr title="ElebeeCore\Lib\Template">Template</abbr></a> $template)
         
                                             <p>Set the template that renders the meta key.</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../../ElebeeCore/Lib/MetaBox/MetaKey.html#method_setTemplate"><abbr title="ElebeeCore\Lib\MetaBox\MetaKey">MetaKey</abbr></a></small></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../ElebeeCore/Lib/MetaBox/MetaKeyBase.html#method_setTemplate"><abbr title="ElebeeCore\Lib\MetaBox\MetaKeyBase">MetaKeyBase</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -187,7 +188,7 @@
                     <a href="#method_getValue">getValue</a>(null|int $postId = null)
         
                                             <p>Get the meta value of the meta key.</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../../ElebeeCore/Lib/MetaBox/MetaKey.html#method_getValue"><abbr title="ElebeeCore\Lib\MetaBox\MetaKey">MetaKey</abbr></a></small></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../ElebeeCore/Lib/MetaBox/MetaKeyBase.html#method_getValue"><abbr title="ElebeeCore\Lib\MetaBox\MetaKeyBase">MetaKeyBase</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -197,7 +198,7 @@
                     <a href="#method_save">save</a>(int $postId)
         
                                             <p>Save the post meta.</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../../ElebeeCore/Lib/MetaBox/MetaKey.html#method_save"><abbr title="ElebeeCore\Lib\MetaBox\MetaKey">MetaKey</abbr></a></small></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../ElebeeCore/Lib/MetaBox/MetaKeyBase.html#method_save"><abbr title="ElebeeCore\Lib\MetaBox\MetaKeyBase">MetaKeyBase</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -278,7 +279,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getKey">
-        <div class="location">in <a href="../../../ElebeeCore/Lib/MetaBox/MetaKey.html#method_getKey"><abbr title="ElebeeCore\Lib\MetaBox\MetaKey">MetaKey</abbr></a> at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/MetaBox/MetaKey.php#L108">line 108</a></div>
+        <div class="location">in <a href="../../../ElebeeCore/Lib/MetaBox/MetaKeyBase.html#method_getKey"><abbr title="ElebeeCore\Lib\MetaBox\MetaKeyBase">MetaKeyBase</abbr></a> at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/MetaBox/MetaKeyBase.php#L108">line 108</a></div>
         <code>                    string
     <strong>getKey</strong>()
         </code>
@@ -308,7 +309,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getLabel">
-        <div class="location">in <a href="../../../ElebeeCore/Lib/MetaBox/MetaKey.html#method_getLabel"><abbr title="ElebeeCore\Lib\MetaBox\MetaKey">MetaKey</abbr></a> at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/MetaBox/MetaKey.php#L121">line 121</a></div>
+        <div class="location">in <a href="../../../ElebeeCore/Lib/MetaBox/MetaKeyBase.html#method_getLabel"><abbr title="ElebeeCore\Lib\MetaBox\MetaKeyBase">MetaKeyBase</abbr></a> at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/MetaBox/MetaKeyBase.php#L121">line 121</a></div>
         <code>                    string
     <strong>getLabel</strong>()
         </code>
@@ -338,7 +339,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getType">
-        <div class="location">in <a href="../../../ElebeeCore/Lib/MetaBox/MetaKey.html#method_getType"><abbr title="ElebeeCore\Lib\MetaBox\MetaKey">MetaKey</abbr></a> at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/MetaBox/MetaKey.php#L134">line 134</a></div>
+        <div class="location">in <a href="../../../ElebeeCore/Lib/MetaBox/MetaKeyBase.html#method_getType"><abbr title="ElebeeCore\Lib\MetaBox\MetaKeyBase">MetaKeyBase</abbr></a> at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/MetaBox/MetaKeyBase.php#L134">line 134</a></div>
         <code>                    string
     <strong>getType</strong>()
         </code>
@@ -368,7 +369,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getTemplate">
-        <div class="location">in <a href="../../../ElebeeCore/Lib/MetaBox/MetaKey.html#method_getTemplate"><abbr title="ElebeeCore\Lib\MetaBox\MetaKey">MetaKey</abbr></a> at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/MetaBox/MetaKey.php#L147">line 147</a></div>
+        <div class="location">in <a href="../../../ElebeeCore/Lib/MetaBox/MetaKeyBase.html#method_getTemplate"><abbr title="ElebeeCore\Lib\MetaBox\MetaKeyBase">MetaKeyBase</abbr></a> at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/MetaBox/MetaKeyBase.php#L147">line 147</a></div>
         <code>                    <a href="../../../ElebeeCore/Lib/Template.html"><abbr title="ElebeeCore\Lib\Template">Template</abbr></a>
     <strong>getTemplate</strong>()
         </code>
@@ -398,7 +399,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setTemplate">
-        <div class="location">in <a href="../../../ElebeeCore/Lib/MetaBox/MetaKey.html#method_setTemplate"><abbr title="ElebeeCore\Lib\MetaBox\MetaKey">MetaKey</abbr></a> at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/MetaBox/MetaKey.php#L161">line 161</a></div>
+        <div class="location">in <a href="../../../ElebeeCore/Lib/MetaBox/MetaKeyBase.html#method_setTemplate"><abbr title="ElebeeCore\Lib\MetaBox\MetaKeyBase">MetaKeyBase</abbr></a> at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/MetaBox/MetaKeyBase.php#L161">line 161</a></div>
         <code>                    void
     <strong>setTemplate</strong>(<a href="../../../ElebeeCore/Lib/Template.html"><abbr title="ElebeeCore\Lib\Template">Template</abbr></a> $template)
         </code>
@@ -438,7 +439,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getValue">
-        <div class="location">in <a href="../../../ElebeeCore/Lib/MetaBox/MetaKey.html#method_getValue"><abbr title="ElebeeCore\Lib\MetaBox\MetaKey">MetaKey</abbr></a> at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/MetaBox/MetaKey.php#L176">line 176</a></div>
+        <div class="location">in <a href="../../../ElebeeCore/Lib/MetaBox/MetaKeyBase.html#method_getValue"><abbr title="ElebeeCore\Lib\MetaBox\MetaKeyBase">MetaKeyBase</abbr></a> at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/MetaBox/MetaKeyBase.php#L176">line 176</a></div>
         <code>                    mixed
     <strong>getValue</strong>(null|int $postId = null)
         </code>
@@ -478,7 +479,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_save">
-        <div class="location">in <a href="../../../ElebeeCore/Lib/MetaBox/MetaKey.html#method_save"><abbr title="ElebeeCore\Lib\MetaBox\MetaKey">MetaKey</abbr></a> at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/MetaBox/MetaKey.php#L194">line 194</a></div>
+        <div class="location">in <a href="../../../ElebeeCore/Lib/MetaBox/MetaKeyBase.html#method_save"><abbr title="ElebeeCore\Lib\MetaBox\MetaKeyBase">MetaKeyBase</abbr></a> at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/MetaBox/MetaKeyBase.php#L194">line 194</a></div>
         <code>                    void
     <strong>save</strong>(int $postId)
         </code>

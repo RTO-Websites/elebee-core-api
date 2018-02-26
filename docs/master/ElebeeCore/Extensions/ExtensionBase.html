@@ -25,7 +25,8 @@
                 <div id="control-panel">
                     <form action="#" method="GET">
                 <select id="version-switcher" name="version">
-                                            <option value="../../../master/index.html" data-version="master">0.2.0</option>
+                                            <option value="../../../master/index.html" data-version="master">0.3.0</option>
+                                            <option value="../../../0.2.0/index.html" data-version="0.2.0">0.2.0</option>
                                             <option value="../../../0.1.0/index.html" data-version="0.1.0">0.1.0</option>
                                     </select>
             </form>
@@ -105,10 +106,10 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method___construct">__construct</a>()
+                    <a href="#method___construct">__construct</a>(string $hook, int $priority = 10, int $argsCount = 1)
         
                                             <p>ThemeSupportFeaturedImage constructor.</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../ElebeeCore/Lib/Hooking.html#method___construct"><abbr title="ElebeeCore\Lib\Hooking">Hooking</abbr></a></small></div>
+                <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -129,7 +130,7 @@
         
                                             <p>Register all of the hooks related to the admin area functionality
 of the theme.</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../ElebeeCore/Lib/Hooking.html#method_defineAdminHooks"><abbr title="ElebeeCore\Lib\Hooking">Hooking</abbr></a></small></div>
+                <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -140,14 +141,14 @@ of the theme.</p>                </div>
         
                                             <p>Register all of the hooks related to the public-facing functionality
 of the theme.</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../ElebeeCore/Lib/Hooking.html#method_definePublicHooks"><abbr title="ElebeeCore\Lib\Hooking">Hooking</abbr></a></small></div>
+                <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
                     void
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_extend">extend</a>(<abbr title="Elementor\Element_Base">Element_Base</abbr> $element)
+                    <a href="#method_extend">extend</a>(<abbr title="Elementor\Controls_Stack">Controls_Stack</abbr> $element)
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -161,9 +162,9 @@ of the theme.</p>                </div>
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">in <a href="../../ElebeeCore/Lib/Hooking.html#method___construct"><abbr title="ElebeeCore\Lib\Hooking">Hooking</abbr></a> at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/Hooking.php#L44">line 44</a></div>
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Extensions/ExtensionBase.php#L38">line 38</a></div>
         <code>                    
-    <strong>__construct</strong>()
+    <strong>__construct</strong>(string $hook, int $priority = 10, int $argsCount = 1)
         </code>
     </h3>
     <div class="details">
@@ -173,6 +174,26 @@ of the theme.</p>                </div>
                     <div class="method-description">
                                     <p>ThemeSupportFeaturedImage constructor.</p>                                                </div>
                 <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$hook</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$priority</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$argsCount</td>
+                <td></td>
+            </tr>
+            </table>
+
             
             
             
@@ -212,8 +233,8 @@ of the theme.</p>                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_defineAdminHooks">
-        <div class="location">in <a href="../../ElebeeCore/Lib/Hooking.html#method_defineAdminHooks"><abbr title="ElebeeCore\Lib\Hooking">Hooking</abbr></a> at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/Hooking.php#L96">line 96</a></div>
-        <code>    abstract                void
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Extensions/ExtensionBase.php#L56">line 56</a></div>
+        <code>                    void
     <strong>defineAdminHooks</strong>()
         </code>
     </h3>
@@ -243,8 +264,8 @@ of the theme.</p>                                                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_definePublicHooks">
-        <div class="location">in <a href="../../ElebeeCore/Lib/Hooking.html#method_definePublicHooks"><abbr title="ElebeeCore\Lib\Hooking">Hooking</abbr></a> at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/Hooking.php#L106">line 106</a></div>
-        <code>    abstract                void
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Extensions/ExtensionBase.php#L61">line 61</a></div>
+        <code>                    void
     <strong>definePublicHooks</strong>()
         </code>
     </h3>
@@ -274,9 +295,9 @@ of the theme.</p>                                                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_extend">
-        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Extensions/ExtensionBase.php#L37">line 37</a></div>
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Extensions/ExtensionBase.php#L54">line 54</a></div>
         <code>    abstract                void
-    <strong>extend</strong>(<abbr title="Elementor\Element_Base">Element_Base</abbr> $element)
+    <strong>extend</strong>(<abbr title="Elementor\Controls_Stack">Controls_Stack</abbr> $element)
         </code>
     </h3>
     <div class="details">
@@ -288,7 +309,7 @@ of the theme.</p>                                                </div>
 
                     <table class="table table-condensed">
                     <tr>
-                <td><abbr title="Elementor\Element_Base">Element_Base</abbr></td>
+                <td><abbr title="Elementor\Controls_Stack">Controls_Stack</abbr></td>
                 <td>$element</td>
                 <td></td>
             </tr>

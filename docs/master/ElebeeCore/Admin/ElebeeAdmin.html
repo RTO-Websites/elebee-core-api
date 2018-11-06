@@ -25,7 +25,9 @@
                 <div id="control-panel">
                     <form action="#" method="GET">
                 <select id="version-switcher" name="version">
-                                            <option value="../../../master/index.html" data-version="master">0.2.0</option>
+                                            <option value="../../../master/index.html" data-version="master">0.4.0</option>
+                                            <option value="../../../0.3.0/index.html" data-version="0.3.0">0.3.0</option>
+                                            <option value="../../../0.2.0/index.html" data-version="0.2.0">0.2.0</option>
                                             <option value="../../../0.1.0/index.html" data-version="0.1.0">0.1.0</option>
                                     </select>
             </form>
@@ -136,29 +138,7 @@ enqueue the admin-specific stylesheet and JavaScript.</p>                    </d
                     void
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_enqueueEditorStyles">enqueueEditorStyles</a>()
-        
-                                            <p class="no-description">No description</p>
-                                    </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    void
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_enqueueEditorScripts">enqueueEditorScripts</a>()
-        
-                                            <p class="no-description">No description</p>
-                                    </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    void
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_get_post_id_by_url">get_post_id_by_url</a>()
+                    <a href="#method_getPostIdByUrl">getPostIdByUrl</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -216,7 +196,7 @@ enqueue the admin-specific stylesheet and JavaScript.</p>                    </d
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Admin/ElebeeAdmin.php#L61">line 61</a></div>
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Admin/ElebeeAdmin.php#L73">line 73</a></div>
         <code>                    
     <strong>__construct</strong>(string $themeName, string $version)
         </code>
@@ -252,7 +232,7 @@ enqueue the admin-specific stylesheet and JavaScript.</p>                    </d
             </div>
                     <div class="method-item">
                     <h3 id="method_enqueueStyles">
-        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Admin/ElebeeAdmin.php#L75">line 75</a></div>
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Admin/ElebeeAdmin.php#L91">line 91</a></div>
         <code>                    void
     <strong>enqueueStyles</strong>()
         </code>
@@ -282,7 +262,7 @@ enqueue the admin-specific stylesheet and JavaScript.</p>                    </d
             </div>
                     <div class="method-item">
                     <h3 id="method_enqueueScripts">
-        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Admin/ElebeeAdmin.php#L101">line 101</a></div>
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Admin/ElebeeAdmin.php#L104">line 104</a></div>
         <code>                    void
     <strong>enqueueScripts</strong>()
         </code>
@@ -311,66 +291,10 @@ enqueue the admin-specific stylesheet and JavaScript.</p>                    </d
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_enqueueEditorStyles">
-        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Admin/ElebeeAdmin.php#L124">line 124</a></div>
+                    <h3 id="method_getPostIdByUrl">
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Admin/ElebeeAdmin.php#L115">line 115</a></div>
         <code>                    void
-    <strong>enqueueEditorStyles</strong>()
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                <div class="tags">
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>void</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_enqueueEditorScripts">
-        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Admin/ElebeeAdmin.php#L135">line 135</a></div>
-        <code>                    void
-    <strong>enqueueEditorScripts</strong>()
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                <div class="tags">
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>void</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_get_post_id_by_url">
-        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Admin/ElebeeAdmin.php#L147">line 147</a></div>
-        <code>                    void
-    <strong>get_post_id_by_url</strong>()
+    <strong>getPostIdByUrl</strong>()
         </code>
     </h3>
     <div class="details">
@@ -396,7 +320,7 @@ enqueue the admin-specific stylesheet and JavaScript.</p>                    </d
             </div>
                     <div class="method-item">
                     <h3 id="method_settingsApiInit">
-        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Admin/ElebeeAdmin.php#L165">line 165</a></div>
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Admin/ElebeeAdmin.php#L134">line 134</a></div>
         <code>                    void
     <strong>settingsApiInit</strong>()
         </code>
@@ -424,7 +348,7 @@ enqueue the admin-specific stylesheet and JavaScript.</p>                    </d
             </div>
                     <div class="method-item">
                     <h3 id="method_settingCallback">
-        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Admin/ElebeeAdmin.php#L185">line 185</a></div>
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Admin/ElebeeAdmin.php#L154">line 154</a></div>
         <code>                    
     <strong>settingCallback</strong>()
         </code>
@@ -443,7 +367,7 @@ enqueue the admin-specific stylesheet and JavaScript.</p>                    </d
             </div>
                     <div class="method-item">
                     <h3 id="method_addMenuPage">
-        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Admin/ElebeeAdmin.php#L196">line 196</a></div>
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Admin/ElebeeAdmin.php#L165">line 165</a></div>
         <code>                    void
     <strong>addMenuPage</strong>()
         </code>
@@ -471,7 +395,7 @@ enqueue the admin-specific stylesheet and JavaScript.</p>                    </d
             </div>
                     <div class="method-item">
                     <h3 id="method_renderAdminPage">
-        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Admin/ElebeeAdmin.php#L214">line 214</a></div>
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Admin/ElebeeAdmin.php#L183">line 183</a></div>
         <code>                    void
     <strong>renderAdminPage</strong>()
         </code>

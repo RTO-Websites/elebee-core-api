@@ -25,7 +25,11 @@
                 <div id="control-panel">
                     <form action="#" method="GET">
                 <select id="version-switcher" name="version">
-                                            <option value="../../../../../master/index.html" data-version="master">0.4.0</option>
+                                            <option value="../../../../../master/index.html" data-version="master">0.8.0</option>
+                                            <option value="../../../../../0.7.0/index.html" data-version="0.7.0">0.7.0</option>
+                                            <option value="../../../../../0.6.0/index.html" data-version="0.6.0">0.6.0</option>
+                                            <option value="../../../../../0.5.0/index.html" data-version="0.5.0">0.5.0</option>
+                                            <option value="../../../../../0.4.0/index.html" data-version="0.4.0">0.4.0</option>
                                             <option value="../../../../../0.3.0/index.html" data-version="0.3.0">0.3.0</option>
                                             <option value="../../../../../0.2.0/index.html" data-version="0.2.0">0.2.0</option>
                                             <option value="../../../../../0.1.0/index.html" data-version="0.1.0">0.1.0</option>
@@ -193,17 +197,6 @@
                     void
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_enqueueAdminStyles">enqueueAdminStyles</a>()
-        
-                                            <p class="no-description">No description</p>
-                                    </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    void
-                </div>
-                <div class="col-md-8 type">
                     <a href="#method_enqueueAdminScripts">enqueueAdminScripts</a>()
         
                                             <p class="no-description">No description</p>
@@ -256,10 +249,32 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_restoreEditorContent">restoreEditorContent</a>($content, $post_id)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_verifyPostData">verifyPostData</a>(array $data, array $postArr)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     void
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_save">save</a>(string $newStatus, string $oldStatus, WP_Post $post)
+                    <a href="#method_saveToFile">saveToFile</a>(string $newStatus, string $oldStatus, WP_Post $post)
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -289,10 +304,21 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    string
+                    
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_collapseAdminMenu">collapseAdminMenu</a>(string $classes)
+                    <a href="#method_preview">preview</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_renderError">renderError</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -306,7 +332,7 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/CustomPostType/CustomCss/CustomCss.php#L62">line 62</a></div>
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/CustomPostType/CustomCss/CustomCss.php#L64">line 64</a></div>
         <code>                    
     <strong>__construct</strong>()
         </code>
@@ -357,7 +383,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_defineAdminHooks">
-        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/CustomPostType/CustomCss/CustomCss.php#L95">line 95</a></div>
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/CustomPostType/CustomCss/CustomCss.php#L98">line 98</a></div>
         <code>                    void
     <strong>defineAdminHooks</strong>()
         </code>
@@ -385,7 +411,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_definePublicHooks">
-        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/CustomPostType/CustomCss/CustomCss.php#L113">line 113</a></div>
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/CustomPostType/CustomCss/CustomCss.php#L117">line 117</a></div>
         <code>                    void
     <strong>definePublicHooks</strong>()
         </code>
@@ -413,7 +439,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getName">
-        <div class="location">in <a href="../../../../ElebeeCore/Lib/CustomPostType/CustomPostTypeBase.html#method_getName"><abbr title="ElebeeCore\Lib\CustomPostType\CustomPostTypeBase">CustomPostTypeBase</abbr></a> at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/CustomPostType/CustomPostTypeBase.php#L62">line 62</a></div>
+        <div class="location">in <a href="../../../../ElebeeCore/Lib/CustomPostType/CustomPostTypeBase.html#method_getName"><abbr title="ElebeeCore\Lib\CustomPostType\CustomPostTypeBase">CustomPostTypeBase</abbr></a> at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/CustomPostType/CustomPostTypeBase.php#L63">line 63</a></div>
         <code>                    string
     <strong>getName</strong>()
         </code>
@@ -441,7 +467,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_register">
-        <div class="location">in <a href="../../../../ElebeeCore/Lib/CustomPostType/CustomPostTypeBase.html#method_register"><abbr title="ElebeeCore\Lib\CustomPostType\CustomPostTypeBase">CustomPostTypeBase</abbr></a> at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/CustomPostType/CustomPostTypeBase.php#L96">line 96</a></div>
+        <div class="location">in <a href="../../../../ElebeeCore/Lib/CustomPostType/CustomPostTypeBase.html#method_register"><abbr title="ElebeeCore\Lib\CustomPostType\CustomPostTypeBase">CustomPostTypeBase</abbr></a> at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/CustomPostType/CustomPostTypeBase.php#L97">line 97</a></div>
         <code>                    void
     <strong>register</strong>()
         </code>
@@ -469,7 +495,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_addPostUpdatedMessages">
-        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/CustomPostType/CustomCss/CustomCss.php#L333">line 333</a></div>
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/CustomPostType/CustomCss/CustomCss.php#L420">line 420</a></div>
         <code>                    array
     <strong>addPostUpdatedMessages</strong>(array $messages)
         </code>
@@ -507,7 +533,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_addBulkPostUpdatedMessages">
-        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/CustomPostType/CustomCss/CustomCss.php#L360">line 360</a></div>
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/CustomPostType/CustomCss/CustomCss.php#L447">line 447</a></div>
         <code>                    array
     <strong>addBulkPostUpdatedMessages</strong>(array $bulkMessages, array $bulkCounts)
         </code>
@@ -549,36 +575,8 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_enqueueAdminStyles">
-        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/CustomPostType/CustomCss/CustomCss.php#L126">line 126</a></div>
-        <code>                    void
-    <strong>enqueueAdminStyles</strong>()
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                <div class="tags">
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>void</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
                     <h3 id="method_enqueueAdminScripts">
-        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/CustomPostType/CustomCss/CustomCss.php#L138">line 138</a></div>
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/CustomPostType/CustomCss/CustomCss.php#L130">line 130</a></div>
         <code>                    void
     <strong>enqueueAdminScripts</strong>()
         </code>
@@ -606,7 +604,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_enqueueEditorScripts">
-        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/CustomPostType/CustomCss/CustomCss.php#L157">line 157</a></div>
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/CustomPostType/CustomCss/CustomCss.php#L152">line 152</a></div>
         <code>                    void
     <strong>enqueueEditorScripts</strong>()
         </code>
@@ -634,7 +632,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_enqueuePublicStyles">
-        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/CustomPostType/CustomCss/CustomCss.php#L169">line 169</a></div>
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/CustomPostType/CustomCss/CustomCss.php#L164">line 164</a></div>
         <code>                    void
     <strong>enqueuePublicStyles</strong>()
         </code>
@@ -662,7 +660,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_initCodeMirror">
-        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/CustomPostType/CustomCss/CustomCss.php#L180">line 180</a></div>
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/CustomPostType/CustomCss/CustomCss.php#L191">line 191</a></div>
         <code>                    void
     <strong>initCodeMirror</strong>()
         </code>
@@ -690,7 +688,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_autoUpdate">
-        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/CustomPostType/CustomCss/CustomCss.php#L200">line 200</a></div>
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/CustomPostType/CustomCss/CustomCss.php#L211">line 211</a></div>
         <code>                    void
     <strong>autoUpdate</strong>()
         </code>
@@ -717,10 +715,96 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_save">
-        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/CustomPostType/CustomCss/CustomCss.php#L228">line 228</a></div>
+                    <h3 id="method_restoreEditorContent">
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/CustomPostType/CustomCss/CustomCss.php#L238">line 238</a></div>
+        <code>                    string
+    <strong>restoreEditorContent</strong>($content, $post_id)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$content</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$post_id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_verifyPostData">
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/CustomPostType/CustomCss/CustomCss.php#L258">line 258</a></div>
+        <code>                    array
+    <strong>verifyPostData</strong>(array $data, array $postArr)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$postArr</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_saveToFile">
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/CustomPostType/CustomCss/CustomCss.php#L292">line 292</a></div>
         <code>                    void
-    <strong>save</strong>(string $newStatus, string $oldStatus, WP_Post $post)
+    <strong>saveToFile</strong>(string $newStatus, string $oldStatus, WP_Post $post)
         </code>
     </h3>
     <div class="details">
@@ -766,7 +850,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_buildCss">
-        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/CustomPostType/CustomCss/CustomCss.php#L260">line 260</a></div>
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/CustomPostType/CustomCss/CustomCss.php#L322">line 322</a></div>
         <code>                    string
     <strong>buildCss</strong>(null $postId = null, string $postScss = &#039;&#039;)
         </code>
@@ -818,7 +902,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_compile">
-        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/CustomPostType/CustomCss/CustomCss.php#L299">line 299</a></div>
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/CustomPostType/CustomCss/CustomCss.php#L362">line 362</a></div>
         <code>                    string
     <strong>compile</strong>(string $scss)
         </code>
@@ -864,10 +948,10 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_collapseAdminMenu">
-        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/CustomPostType/CustomCss/CustomCss.php#L318">line 318</a></div>
-        <code>                    string
-    <strong>collapseAdminMenu</strong>(string $classes)
+                    <h3 id="method_preview">
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/CustomPostType/CustomCss/CustomCss.php#L387">line 387</a></div>
+        <code>                    
+    <strong>preview</strong>()
         </code>
     </h3>
     <div class="details">
@@ -875,22 +959,31 @@
     
 
                 <div class="tags">
-                            <h4>Parameters</h4>
+            
+            
+            
+                    </div>
+    </div>
 
-                    <table class="table table-condensed">
-                    <tr>
-                <td>string</td>
-                <td>$classes</td>
-                <td></td>
-            </tr>
-            </table>
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_renderError">
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Lib/CustomPostType/CustomCss/CustomCss.php#L466">line 466</a></div>
+        <code>                    void
+    <strong>renderError</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
 
+                <div class="tags">
             
                             <h4>Return Value</h4>
 
                     <table class="table table-condensed">
         <tr>
-            <td>string</td>
+            <td>void</td>
             <td></td>
         </tr>
     </table>

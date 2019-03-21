@@ -25,7 +25,11 @@
                 <div id="control-panel">
                     <form action="#" method="GET">
                 <select id="version-switcher" name="version">
-                                            <option value="../../../master/index.html" data-version="master">0.4.0</option>
+                                            <option value="../../../master/index.html" data-version="master">0.8.0</option>
+                                            <option value="../../../0.7.0/index.html" data-version="0.7.0">0.7.0</option>
+                                            <option value="../../../0.6.0/index.html" data-version="0.6.0">0.6.0</option>
+                                            <option value="../../../0.5.0/index.html" data-version="0.5.0">0.5.0</option>
+                                            <option value="../../../0.4.0/index.html" data-version="0.4.0">0.4.0</option>
                                             <option value="../../../0.3.0/index.html" data-version="0.3.0">0.3.0</option>
                                             <option value="../../../0.2.0/index.html" data-version="0.2.0">0.2.0</option>
                                             <option value="../../../0.1.0/index.html" data-version="0.1.0">0.1.0</option>
@@ -140,6 +144,17 @@ enqueue the admin-specific stylesheet and JavaScript.</p>                    </d
                     void
                 </div>
                 <div class="col-md-8 type">
+                    <a href="#method_enqueuePreviewStyles">enqueuePreviewStyles</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
                     <a href="#method_enqueuePreviewScripts">enqueuePreviewScripts</a>()
         
                                             <p class="no-description">No description</p>
@@ -207,7 +222,7 @@ enqueue the admin-specific stylesheet and JavaScript.</p>                    </d
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Elementor/ElebeeElementor.php#L88">line 88</a></div>
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Elementor/ElebeeElementor.php#L89">line 89</a></div>
         <code>                    
     <strong>__construct</strong>(string $themeName, string $version)
         </code>
@@ -243,7 +258,7 @@ enqueue the admin-specific stylesheet and JavaScript.</p>                    </d
             </div>
                     <div class="method-item">
                     <h3 id="method_enqueueEditorStyles">
-        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Elementor/ElebeeElementor.php#L104">line 104</a></div>
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Elementor/ElebeeElementor.php#L105">line 105</a></div>
         <code>                    void
     <strong>enqueueEditorStyles</strong>()
         </code>
@@ -271,7 +286,7 @@ enqueue the admin-specific stylesheet and JavaScript.</p>                    </d
             </div>
                     <div class="method-item">
                     <h3 id="method_enqueueEditorScripts">
-        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Elementor/ElebeeElementor.php#L115">line 115</a></div>
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Elementor/ElebeeElementor.php#L116">line 116</a></div>
         <code>                    void
     <strong>enqueueEditorScripts</strong>()
         </code>
@@ -298,8 +313,36 @@ enqueue the admin-specific stylesheet and JavaScript.</p>                    </d
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_enqueuePreviewStyles">
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Elementor/ElebeeElementor.php#L130">line 130</a></div>
+        <code>                    void
+    <strong>enqueuePreviewStyles</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_enqueuePreviewScripts">
-        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Elementor/ElebeeElementor.php#L129">line 129</a></div>
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Elementor/ElebeeElementor.php#L141">line 141</a></div>
         <code>                    void
     <strong>enqueuePreviewScripts</strong>()
         </code>
@@ -327,7 +370,7 @@ enqueue the admin-specific stylesheet and JavaScript.</p>                    </d
             </div>
                     <div class="method-item">
                     <h3 id="method_setupExtensions">
-        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Elementor/ElebeeElementor.php#L140">line 140</a></div>
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Elementor/ElebeeElementor.php#L152">line 152</a></div>
         <code>                    void
     <strong>setupExtensions</strong>()
         </code>
@@ -355,7 +398,7 @@ enqueue the admin-specific stylesheet and JavaScript.</p>                    </d
             </div>
                     <div class="method-item">
                     <h3 id="method_registerWidgets">
-        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Elementor/ElebeeElementor.php#L171">line 171</a></div>
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Elementor/ElebeeElementor.php#L183">line 183</a></div>
         <code>                    void
     <strong>registerWidgets</strong>()
         </code>
@@ -385,7 +428,7 @@ enqueue the admin-specific stylesheet and JavaScript.</p>                    </d
             </div>
                     <div class="method-item">
                     <h3 id="method_registerExclusiveWidgets">
-        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Elementor/ElebeeElementor.php#L188">line 188</a></div>
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Elementor/ElebeeElementor.php#L200">line 200</a></div>
         <code>                    void
     <strong>registerExclusiveWidgets</strong>()
         </code>
@@ -415,7 +458,7 @@ enqueue the admin-specific stylesheet and JavaScript.</p>                    </d
             </div>
                     <div class="method-item">
                     <h3 id="method_setupCategories">
-        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Elementor/ElebeeElementor.php#L205">line 205</a></div>
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Elementor/ElebeeElementor.php#L217">line 217</a></div>
         <code>                    void
     <strong>setupCategories</strong>(<abbr title="Elementor\Elements_Manager">Elements_Manager</abbr> $elementsManager)
         </code>
@@ -453,7 +496,7 @@ enqueue the admin-specific stylesheet and JavaScript.</p>                    </d
             </div>
                     <div class="method-item">
                     <h3 id="method_registerSkinArchive">
-        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Elementor/ElebeeElementor.php#L232">line 232</a></div>
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/master/src/Elementor/ElebeeElementor.php#L244">line 244</a></div>
         <code>                    void
     <strong>registerSkinArchive</strong>(<abbr title="Elementor\Widget_Base">Widget_Base</abbr> $widget)
         </code>

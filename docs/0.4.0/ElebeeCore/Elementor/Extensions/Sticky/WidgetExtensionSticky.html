@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>ElebeeCore\Elementor\Extensions\Sticky\WidgetExtensionSticky | Elebee Core API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/sami.css">
+        <script src="../../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../../js/bootstrap.min.js"></script>
+        <script src="../../../../js/typeahead.min.js"></script>
+        <script src="../../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:ElebeeCore_Elementor_Extensions_Sticky_WidgetExtensionSticky" data-root-path="../../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                    <form action="#" method="GET">
+                <select id="version-switcher" name="version">
+                                            <option value="../../../../../master/index.html" data-version="master">0.8.0</option>
+                                            <option value="../../../../../0.7.0/index.html" data-version="0.7.0">0.7.0</option>
+                                            <option value="../../../../../0.6.0/index.html" data-version="0.6.0">0.6.0</option>
+                                            <option value="../../../../../0.5.0/index.html" data-version="0.5.0">0.5.0</option>
+                                            <option value="../../../../../0.4.0/index.html" data-version="0.4.0">0.4.0</option>
+                                            <option value="../../../../../0.3.0/index.html" data-version="0.3.0">0.3.0</option>
+                                            <option value="../../../../../0.2.0/index.html" data-version="0.2.0">0.2.0</option>
+                                            <option value="../../../../../0.1.0/index.html" data-version="0.1.0">0.1.0</option>
+                                    </select>
+            </form>
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Elebee Core API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../ElebeeCore.html">ElebeeCore</a></li><li class="backslash">\</li><li><a href="../../../../ElebeeCore/Elementor.html">Elementor</a></li><li class="backslash">\</li><li><a href="../../../../ElebeeCore/Elementor/Extensions.html">Extensions</a></li><li class="backslash">\</li><li><a href="../../../../ElebeeCore/Elementor/Extensions/Sticky.html">Sticky</a></li><li class="backslash">\</li><li>WidgetExtensionSticky</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            WidgetExtensionSticky
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>WidgetExtensionSticky</strong>        extends <a href="../../../../ElebeeCore/Elementor/Extensions/WidgetExtensionBase.html"><abbr title="ElebeeCore\Elementor\Extensions\WidgetExtensionBase">WidgetExtensionBase</abbr></a>        (<a href="https://github.com/RTO-Websites/elebee-core/blob/0.4.0/src/Elementor/Extensions/Sticky/WidgetExtensionSticky.php">View source</a>)
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>Class WidgetExtensionSticky</p>                                </div>
+    
+    
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>NEW_SECTION_BEFORE</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>NEW_SECTION_AFTER</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>EXTEND_SECTION_BEFORE</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>EXTEND_SECTION_AFTER</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>()
+        
+                                            <p>Sticky constructor.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getTab">getTab</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../ElebeeCore/Elementor/Extensions/WidgetExtensionBase.html#method_getTab"><abbr title="ElebeeCore\Elementor\Extensions\WidgetExtensionBase">WidgetExtensionBase</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getWidgetId">getWidgetId</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../ElebeeCore/Elementor/Extensions/WidgetExtensionBase.html#method_getWidgetId"><abbr title="ElebeeCore\Elementor\Extensions\WidgetExtensionBase">WidgetExtensionBase</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getSectionId">getSectionId</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../ElebeeCore/Elementor/Extensions/WidgetExtensionBase.html#method_getSectionId"><abbr title="ElebeeCore\Elementor\Extensions\WidgetExtensionBase">WidgetExtensionBase</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getPosition">getPosition</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../ElebeeCore/Elementor/Extensions/WidgetExtensionBase.html#method_getPosition"><abbr title="ElebeeCore\Elementor\Extensions\WidgetExtensionBase">WidgetExtensionBase</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getPriority">getPriority</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../ElebeeCore/Elementor/Extensions/WidgetExtensionBase.html#method_getPriority"><abbr title="ElebeeCore\Elementor\Extensions\WidgetExtensionBase">WidgetExtensionBase</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isSeparatorBefore">isSeparatorBefore</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../ElebeeCore/Elementor/Extensions/WidgetExtensionBase.html#method_isSeparatorBefore"><abbr title="ElebeeCore\Elementor\Extensions\WidgetExtensionBase">WidgetExtensionBase</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../ElebeeCore/Lib/ElebeeLoader.html"><abbr title="ElebeeCore\Lib\ElebeeLoader">ElebeeLoader</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getLoader">getLoader</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../ElebeeCore/Elementor/Extensions/WidgetExtensionBase.html#method_getLoader"><abbr title="ElebeeCore\Elementor\Extensions\WidgetExtensionBase">WidgetExtensionBase</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isRegisteredTo">isRegisteredTo</a>(string $widgetId)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../ElebeeCore/Elementor/Extensions/WidgetExtensionBase.html#method_isRegisteredTo"><abbr title="ElebeeCore\Elementor\Extensions\WidgetExtensionBase">WidgetExtensionBase</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_register">register</a>(string $tab, string $widgetId = &#039;&#039;, string $sectionId = &#039;&#039;, string $position = &#039;&#039;, bool $separatorBefore = false, int $priority = 10)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../ElebeeCore/Elementor/Extensions/WidgetExtensionBase.html#method_register"><abbr title="ElebeeCore\Elementor\Extensions\WidgetExtensionBase">WidgetExtensionBase</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_extendControlStack">extendControlStack</a>(<abbr title="Elementor\Controls_Stack">Controls_Stack</abbr> $element)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../ElebeeCore/Elementor/Extensions/WidgetExtensionBase.html#method_extendControlStack"><abbr title="ElebeeCore\Elementor\Extensions\WidgetExtensionBase">WidgetExtensionBase</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_startControlsSection">startControlsSection</a>(<abbr title="Elementor\Controls_Stack">Controls_Stack</abbr> $element)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addControls">addControls</a>(<abbr title="Elementor\Controls_Stack">Controls_Stack</abbr> $element)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_extendRender">extendRender</a>(string $widgetContent, <abbr title="Elementor\Widget_Base">Widget_Base</abbr> $widget = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_extendContentTemplate">extendContentTemplate</a>(string $widgetContent, <abbr title="Elementor\Widget_Base">Widget_Base</abbr> $widget = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_definePublicHooks">definePublicHooks</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_enqueueScrips">enqueueScrips</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setRenderAttributes">setRenderAttributes</a>(<abbr title="Elementor\Element_Base">Element_Base</abbr> $element)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/0.4.0/src/Elementor/Extensions/Sticky/WidgetExtensionSticky.php#L74">line 74</a></div>
+        <code>                    
+    <strong>__construct</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sticky constructor.</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getTab">
+        <div class="location">in <a href="../../../../ElebeeCore/Elementor/Extensions/WidgetExtensionBase.html#method_getTab"><abbr title="ElebeeCore\Elementor\Extensions\WidgetExtensionBase">WidgetExtensionBase</abbr></a> at         <a href="https://github.com/RTO-Websites/elebee-core/blob/0.4.0/src/Elementor/Extensions/WidgetExtensionBase.php#L152">line 152</a></div>
+        <code>                    string
+    <strong>getTab</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getWidgetId">
+        <div class="location">in <a href="../../../../ElebeeCore/Elementor/Extensions/WidgetExtensionBase.html#method_getWidgetId"><abbr title="ElebeeCore\Elementor\Extensions\WidgetExtensionBase">WidgetExtensionBase</abbr></a> at         <a href="https://github.com/RTO-Websites/elebee-core/blob/0.4.0/src/Elementor/Extensions/WidgetExtensionBase.php#L163">line 163</a></div>
+        <code>                    string
+    <strong>getWidgetId</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSectionId">
+        <div class="location">in <a href="../../../../ElebeeCore/Elementor/Extensions/WidgetExtensionBase.html#method_getSectionId"><abbr title="ElebeeCore\Elementor\Extensions\WidgetExtensionBase">WidgetExtensionBase</abbr></a> at         <a href="https://github.com/RTO-Websites/elebee-core/blob/0.4.0/src/Elementor/Extensions/WidgetExtensionBase.php#L174">line 174</a></div>
+        <code>                    string
+    <strong>getSectionId</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPosition">
+        <div class="location">in <a href="../../../../ElebeeCore/Elementor/Extensions/WidgetExtensionBase.html#method_getPosition"><abbr title="ElebeeCore\Elementor\Extensions\WidgetExtensionBase">WidgetExtensionBase</abbr></a> at         <a href="https://github.com/RTO-Websites/elebee-core/blob/0.4.0/src/Elementor/Extensions/WidgetExtensionBase.php#L185">line 185</a></div>
+        <code>                    string
+    <strong>getPosition</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPriority">
+        <div class="location">in <a href="../../../../ElebeeCore/Elementor/Extensions/WidgetExtensionBase.html#method_getPriority"><abbr title="ElebeeCore\Elementor\Extensions\WidgetExtensionBase">WidgetExtensionBase</abbr></a> at         <a href="https://github.com/RTO-Websites/elebee-core/blob/0.4.0/src/Elementor/Extensions/WidgetExtensionBase.php#L196">line 196</a></div>
+        <code>                    string
+    <strong>getPriority</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isSeparatorBefore">
+        <div class="location">in <a href="../../../../ElebeeCore/Elementor/Extensions/WidgetExtensionBase.html#method_isSeparatorBefore"><abbr title="ElebeeCore\Elementor\Extensions\WidgetExtensionBase">WidgetExtensionBase</abbr></a> at         <a href="https://github.com/RTO-Websites/elebee-core/blob/0.4.0/src/Elementor/Extensions/WidgetExtensionBase.php#L207">line 207</a></div>
+        <code>                    bool
+    <strong>isSeparatorBefore</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getLoader">
+        <div class="location">in <a href="../../../../ElebeeCore/Elementor/Extensions/WidgetExtensionBase.html#method_getLoader"><abbr title="ElebeeCore\Elementor\Extensions\WidgetExtensionBase">WidgetExtensionBase</abbr></a> at         <a href="https://github.com/RTO-Websites/elebee-core/blob/0.4.0/src/Elementor/Extensions/WidgetExtensionBase.php#L218">line 218</a></div>
+        <code>                    <a href="../../../../ElebeeCore/Lib/ElebeeLoader.html"><abbr title="ElebeeCore\Lib\ElebeeLoader">ElebeeLoader</abbr></a>
+    <strong>getLoader</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../ElebeeCore/Lib/ElebeeLoader.html"><abbr title="ElebeeCore\Lib\ElebeeLoader">ElebeeLoader</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isRegisteredTo">
+        <div class="location">in <a href="../../../../ElebeeCore/Elementor/Extensions/WidgetExtensionBase.html#method_isRegisteredTo"><abbr title="ElebeeCore\Elementor\Extensions\WidgetExtensionBase">WidgetExtensionBase</abbr></a> at         <a href="https://github.com/RTO-Websites/elebee-core/blob/0.4.0/src/Elementor/Extensions/WidgetExtensionBase.php#L230">line 230</a></div>
+        <code>                    bool
+    <strong>isRegisteredTo</strong>(string $widgetId)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$widgetId</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_register">
+        <div class="location">in <a href="../../../../ElebeeCore/Elementor/Extensions/WidgetExtensionBase.html#method_register"><abbr title="ElebeeCore\Elementor\Extensions\WidgetExtensionBase">WidgetExtensionBase</abbr></a> at         <a href="https://github.com/RTO-Websites/elebee-core/blob/0.4.0/src/Elementor/Extensions/WidgetExtensionBase.php#L247">line 247</a></div>
+        <code>                    void
+    <strong>register</strong>(string $tab, string $widgetId = &#039;&#039;, string $sectionId = &#039;&#039;, string $position = &#039;&#039;, bool $separatorBefore = false, int $priority = 10)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$tab</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$widgetId</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$sectionId</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$position</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$separatorBefore</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$priority</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_extendControlStack">
+        <div class="location">in <a href="../../../../ElebeeCore/Elementor/Extensions/WidgetExtensionBase.html#method_extendControlStack"><abbr title="ElebeeCore\Elementor\Extensions\WidgetExtensionBase">WidgetExtensionBase</abbr></a> at         <a href="https://github.com/RTO-Websites/elebee-core/blob/0.4.0/src/Elementor/Extensions/WidgetExtensionBase.php#L274">line 274</a></div>
+        <code>                    void
+    <strong>extendControlStack</strong>(<abbr title="Elementor\Controls_Stack">Controls_Stack</abbr> $element)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Elementor\Controls_Stack">Controls_Stack</abbr></td>
+                <td>$element</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_startControlsSection">
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/0.4.0/src/Elementor/Extensions/Sticky/WidgetExtensionSticky.php#L96">line 96</a></div>
+        <code>                    void
+    <strong>startControlsSection</strong>(<abbr title="Elementor\Controls_Stack">Controls_Stack</abbr> $element)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Elementor\Controls_Stack">Controls_Stack</abbr></td>
+                <td>$element</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addControls">
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/0.4.0/src/Elementor/Extensions/Sticky/WidgetExtensionSticky.php#L107">line 107</a></div>
+        <code>                    void
+    <strong>addControls</strong>(<abbr title="Elementor\Controls_Stack">Controls_Stack</abbr> $element)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Elementor\Controls_Stack">Controls_Stack</abbr></td>
+                <td>$element</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_extendRender">
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/0.4.0/src/Elementor/Extensions/Sticky/WidgetExtensionSticky.php#L167">line 167</a></div>
+        <code>                    string
+    <strong>extendRender</strong>(string $widgetContent, <abbr title="Elementor\Widget_Base">Widget_Base</abbr> $widget = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$widgetContent</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Elementor\Widget_Base">Widget_Base</abbr></td>
+                <td>$widget</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_extendContentTemplate">
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/0.4.0/src/Elementor/Extensions/Sticky/WidgetExtensionSticky.php#L173">line 173</a></div>
+        <code>                    string
+    <strong>extendContentTemplate</strong>(string $widgetContent, <abbr title="Elementor\Widget_Base">Widget_Base</abbr> $widget = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$widgetContent</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Elementor\Widget_Base">Widget_Base</abbr></td>
+                <td>$widget</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_definePublicHooks">
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/0.4.0/src/Elementor/Extensions/Sticky/WidgetExtensionSticky.php#L88">line 88</a></div>
+        <code>                    
+    <strong>definePublicHooks</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_enqueueScrips">
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/0.4.0/src/Elementor/Extensions/Sticky/WidgetExtensionSticky.php#L185">line 185</a></div>
+        <code>                    void
+    <strong>enqueueScrips</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setRenderAttributes">
+        <div class="location">at         <a href="https://github.com/RTO-Websites/elebee-core/blob/0.4.0/src/Elementor/Extensions/Sticky/WidgetExtensionSticky.php#L201">line 201</a></div>
+        <code>                    void
+    <strong>setRenderAttributes</strong>(<abbr title="Elementor\Element_Base">Element_Base</abbr> $element)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Elementor\Element_Base">Element_Base</abbr></td>
+                <td>$element</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>
